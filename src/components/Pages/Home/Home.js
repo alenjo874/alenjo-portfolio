@@ -74,7 +74,7 @@ function Home() {
   function enter() {}
 
   return (
-    <div className="pages-container" id="home">
+    <div className="pages-container home-page" id="home">
       <Text />
       <EasingComponent />
     </div>

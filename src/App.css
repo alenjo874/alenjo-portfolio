@@ -16,6 +16,21 @@
   background-color: #1a1a1a;
 }
 
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hollow-outline {
+  font-size: 8rem;
+  color: #1a1a1a;
+  -webkit-text-fill-color: #1a1a1a; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #4dd2ff;
+}
+
 .navbar {
   display: flex;
   height: 80px;
@@ -28,11 +43,4 @@
 
 .navbar > .active {
   border-bottom: 2px solid #4dd2ff;
-}
-
-.hollow-outline {
-  color: #1a1a1a;
-  -webkit-text-fill-color: #1a1a1a; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #4dd2ff;
 }
