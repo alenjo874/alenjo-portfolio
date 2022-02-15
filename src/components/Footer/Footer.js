@@ -9,7 +9,7 @@ function Footer() {
         to="aboutme"
         spy={true}
         smooth={true}
-        offset={0}
+        offset={-80}
         duration={500}
       >
         <ul>Back to Top</ul>

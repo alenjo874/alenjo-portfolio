@@ -40,6 +40,7 @@
   background-color: #272727;
   position: sticky;
   top: 0;
+
 }
 
 .navbar > .active {
@@ -47,8 +48,8 @@
 }
 
 .navbar-elements {
-  margin: 0 20px;
   font-size: 1.25rem;
+  padding: 25px;
 }
 
 .skills-page {
@@ -64,21 +65,22 @@
   flex-wrap: wrap;
   align-items: center;
   border: 2px solid red;
-  height: 500px;
-  width: 800px;
+  height: 600px;
+  width: 900px;
 }
 
 .skills-card {
+  text-align: center;
   border: 2px solid yellow;
   width: 140px;
   height: 110px;
+  margin: 25px;
 }
 
 .skills-card:hover {
   transition: all 0.2s ease-in-out;
-  transform: scale(1.125);
+  transform: scale(1.25);
 }
-
 
 .footer {
   display: flex;
