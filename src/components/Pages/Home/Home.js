@@ -15,7 +15,7 @@ function Home() {
     return (
       <animated.h1 style={props}>
         <div className="home-page">
-          <h1 className="outline">WELCOME</h1>
+          <h1 className="hollow-outline">WELCOME</h1>
           <div className="typewriter">
             <Typewriter
               options={{
