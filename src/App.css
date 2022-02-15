@@ -1,4 +1,28 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+/* #4dd2ff
+#1A1A1A
+#272727 */
+
+.pages-container {
+  height: 1000px;
+  background-color: #1a1a1a;
+}
+
+.navbar {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  position: sticky;
+  top: 0;
+}
+
+.navbar > .active {
+  border-bottom: 2px solid #4dd2ff;
 }
