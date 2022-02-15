@@ -25,7 +25,7 @@ function Skills() {
   });
 
   return (
-    <div className="pages-container" id="skills">
+    <div className="pages-container skills-page" id="skills">
       <h2>Skills</h2>
       <div className="skills-card-container">{displaySkillsCard}</div>
     </div>

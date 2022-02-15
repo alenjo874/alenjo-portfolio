@@ -14,6 +14,7 @@
 .pages-container {
   height: 1000px;
   background-color: #1a1a1a;
+  border: 2px solid red;
 }
 
 .home-page {
@@ -43,4 +44,46 @@
 
 .navbar > .active {
   border-bottom: 2px solid #4dd2ff;
+}
+
+.navbar-elements {
+  margin: 0 20px;
+  font-size: 1.25rem;
+}
+
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid red;
+  height: 500px;
+  width: 800px;
+}
+
+.skills-card {
+  border: 2px solid yellow;
+  width: 140px;
+  height: 110px;
+}
+
+.skills-card:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.125);
+}
+
+
+.footer {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
 }
