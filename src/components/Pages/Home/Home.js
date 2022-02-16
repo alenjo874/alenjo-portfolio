@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import { useSpring, animated, config, easings } from "react-spring";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 function Home() {
   function Text() {
@@ -15,8 +16,17 @@ function Home() {
     return (
       <animated.h1 style={props}>
         <div className="home-page">
-          <h1 className="hollow-outline">WELCOME</h1>
-          <div className="typewriter">
+          <motion.h1
+            className="hollow-outline"
+            whileHover={{ scale: 1.2, textShadow: "0px 0px 8px rgb(255, 255, 255) "}}
+            initial={{ y: -250 }}
+            animate={{ y: -10 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+            
+          >
+            WELCOME
+          </motion.h1>
+          <motion.div className="typewriter">
             <Typewriter
               options={{
                 strings: ["Full Stack Developer", "React Developer"],
@@ -24,7 +34,23 @@ function Home() {
                 loop: true,
               }}
             />
-          </div>
+          </motion.div>
+          <Link
+            activeClass="active"
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            offset={-85}
+            duration={500}
+          >
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              className="view-work-btn"
+            >
+              View My Work
+            </motion.button>
+          </Link>
         </div>
       </animated.h1>
     );
@@ -76,7 +102,7 @@ function Home() {
   return (
     <div className="pages-container home-page" id="home">
       <Text />
-      <EasingComponent />
+      {/* <EasingComponent /> */}
     </div>
   );
 }

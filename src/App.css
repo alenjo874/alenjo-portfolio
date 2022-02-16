@@ -30,6 +30,21 @@
   -webkit-text-fill-color: #1a1a1a; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2.5px;
   -webkit-text-stroke-color: #4dd2ff;
+  position: relative;
+  top: -150px;
+}
+
+.typewriter {
+  position: relative;
+  top: -150px;
+}
+
+.view-work-btn {
+  position: relative;
+  top: 150px;
+  background-color: #272727;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .navbar {
@@ -50,6 +65,7 @@
   font-size: 1.25rem;
   padding: 25px;
 }
+
 
 .skills-page {
   display: flex;
