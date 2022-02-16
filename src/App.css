@@ -40,7 +40,6 @@
   background-color: #272727;
   position: sticky;
   top: 0;
-
 }
 
 .navbar > .active {
@@ -75,11 +74,6 @@
   width: 140px;
   height: 110px;
   margin: 25px;
-}
-
-.skills-card:hover {
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.25);
 }
 
 .footer {
