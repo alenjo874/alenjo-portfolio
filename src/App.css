@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap");
 
+/* #4dd2ff
+#1A1A1A
+#272727 */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +11,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* #4dd2ff
-#1A1A1A
-#272727 */
+img {
+  width: 100%;
+}
 
 .pages-container {
   height: 1000px;
@@ -58,14 +62,24 @@
 }
 
 .navbar > .active {
-  border-bottom: 2px solid #4dd2ff;
+  border-bottom: 3px solid #4dd2ff;
 }
 
 .navbar-elements {
   font-size: 1.25rem;
+  font-weight: 700;
   padding: 25px;
+  transition: 0.35s;
 }
 
+.navbar-elements:hover {
+  color: #4dd2ff;
+}
+
+.navbar-elements:active {
+  transition: 0.1s;
+  color: #d3d3d3;
+}
 
 .skills-page {
   display: flex;
@@ -90,6 +104,45 @@
   width: 140px;
   height: 110px;
   margin: 25px;
+}
+
+#projects {
+  /* height: auto; */
+}
+
+.project-card-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid blue; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blue;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-card {
+  /* margin: 30px;
+  padding: 50px;
+  max-width: 350px;
+  max-width: 350px;
+  border: 2px solid yellow; */
+  position: relative;
+  width: 400px;
+  border: 2px solid yellow;
+}
+
+.project-image {
+  width: 350px;
+  border: 3px solid blueviolet;
 }
 
 .footer {

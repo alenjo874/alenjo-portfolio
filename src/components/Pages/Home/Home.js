@@ -18,11 +18,13 @@ function Home() {
         <div className="home-page">
           <motion.h1
             className="hollow-outline"
-            whileHover={{ scale: 1.2, textShadow: "0px 0px 8px rgb(255, 255, 255) "}}
+            whileHover={{
+              scale: 1.2,
+              textShadow: "0px 0px 8px rgb(255, 255, 255) ",
+            }}
             initial={{ y: -250 }}
             animate={{ y: -10 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-            
+            transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
           >
             WELCOME
           </motion.h1>

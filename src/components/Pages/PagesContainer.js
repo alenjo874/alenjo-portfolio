@@ -1,14 +1,13 @@
 import React from "react";
-import AboutMe from "./AboutMe";
+import AboutMe from "./AboutMe/AboutMe";
 import Resume from "./Resume/Resume";
-import Skills from "./Skills";
-import Projects from "./Projects";
+import Skills from "./Skills/Skills";
+import Projects from "./Projects/Projects";
 import Home from "./Home/Home";
 
 function PagesContainer() {
   return (
     <div>
-      {/* <Home /> */}
       <AboutMe />
       <Resume />
       <Skills />
