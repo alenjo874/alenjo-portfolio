@@ -10,20 +10,32 @@ function ProjectsCard({
   setIsCardClick,
 }) {
   const displayStack = codingStack.map((code) => {
-    return <li key={uuidv4()}>{code}</li>;
+    return <li className="stack-element" key={uuidv4()}>{code}</li>;
   });
 
   return (
     <div className="project-card">
-      <div className="project-image">
-        <img src={image}></img>
+      <div className="project-card-image">
+        <img src={image}/>
       </div>
-      <div>
-        <h4>{name}</h4>
-        <p>{description}</p>
-        <ul>{displayStack}</ul>
+      <div className="project-details">
+        <div className="project-name">
+          <h4>{name}</h4>
+        </div>
+        <div className="project-stack">
+           {displayStack}
+        </div>
+        <div className="project-about">
+          <p>{description}</p>
+        </div>
+        <div className="project-links">
+          <p>Demo</p>
+          <p>{github}</p>
+        </div>
+        <button className="hide-button" onClick={() => setIsCardClick(false)}>
+          Hide
+        </button>
       </div>
-      <button onClick={() => setIsCardClick(false)}>Hide</button>
     </div>
   );
 }

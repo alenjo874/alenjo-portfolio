@@ -1,10 +1,7 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-
 function NavBarElements() {
-
-
   return (
     <>
       <Link
@@ -19,13 +16,13 @@ function NavBarElements() {
       </Link>
       <Link
         activeClass="active"
-        to="resume"
+        to="projects"
         spy={true}
         smooth={true}
         offset={-85}
         duration={500}
       >
-        <ul className="navbar-elements">Resume</ul>
+        <ul className="navbar-elements">Projects</ul>
       </Link>
       <Link
         activeClass="active"
@@ -37,16 +34,15 @@ function NavBarElements() {
       >
         <ul className="navbar-elements">Skills</ul>
       </Link>
-
       <Link
         activeClass="active"
-        to="projects"
+        to="resume"
         spy={true}
         smooth={true}
         offset={-85}
         duration={500}
       >
-        <ul className="navbar-elements">Projects</ul>
+        <ul className="navbar-elements">Resume</ul>
       </Link>
     </>
   );

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 function Experience() {
-  const [info, setInfo] = useState(true);
+  const [info, setInfo] = useState(false);
 
   function handleEnter() {
     setInfo(false);
   }
   function handleLeave() {
-    setInfo(true);
+    setInfo(false);
   }
   return (
     <div
@@ -16,7 +16,6 @@ function Experience() {
       onMouseLeave={handleLeave}
     >
       <div className="resume-info">
-        <h4>EDUCATION</h4>
         <div className="name-date">
           {info ? (
             <>
