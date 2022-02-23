@@ -10,14 +10,8 @@ function Resume() {
       <h2>Resume</h2>
       <div className="resume">
         <ResumeCard />
-        {/* <div className="resume-card">
-          <Experience />
-        </div> */}
-
-        {/* <Education />
-        <Skills />
-        <Experience /> */}
       </div>
+      
     </div>
   );
 }

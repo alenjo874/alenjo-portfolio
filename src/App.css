@@ -209,7 +209,7 @@ img {
 
 .resume-header {
   display: flex;
-  border: 2px solid blue;
+  border-bottom: 2px solid blue;
 }
 
 .company-logo {
@@ -220,7 +220,6 @@ img {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border: 2px solid red;
 }
 
 .footer {
