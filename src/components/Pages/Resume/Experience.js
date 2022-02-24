@@ -22,7 +22,7 @@ function Experience() {
               <p>IMPERIAL DADE</p>
               <p>
                 <em>Senior Contracts Specialist</em>
-              </p>{" "}
+              </p>
             </>
           ) : (
             <>

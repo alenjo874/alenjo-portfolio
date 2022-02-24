@@ -1,19 +1,45 @@
 import React from "react";
-import Experience from "./Experience";
+import { v4 as uuidv4 } from "uuid";
 
-function ResumeCard() {
+function ResumeCard({
+  company,
+  logo,
+  link,
+  position,
+  details,
+  location,
+  dates,
+}) {
+  const displayWorkDetails = details.map((detail) => {
+    return (
+      <li key={uuidv4()} className="detail-element">
+        {detail}
+      </li>
+    );
+  });
+
   return (
     <div className="resume-card">
       <div className="resume-header">
         <div className="company-logo">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvqXLkU2N4xNGit038L5r1lsv58rf5ekmcQ&usqp=CAU" />
+          <a href={link} target="_blank">
+            <img src={logo} alt={company} />
+          </a>
         </div>
-        <span className="company-position">
-        <h4>Company Name</h4>
-        <p>Position</p>
-        </span>
+        <div className="company-details">
+          <span>
+            <a href={link} target="_blank" className="company-link">
+              <h4 className="company-name">{company}</h4>
+            </a>
+            <p>{location}</p>
+          </span>
+          <span className="position-dates">
+            <p>{position}</p>
+            <em>{dates}</em>
+          </span>
+        </div>
       </div>
-      <Experience />
+      <div className="resume-info">{displayWorkDetails}</div>
     </div>
   );
 }
