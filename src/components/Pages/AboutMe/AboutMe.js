@@ -6,15 +6,19 @@ function AboutMeContainer() {
       AboutMeContainer
       <div className="about-desc">
         <p>
-          Fully committed to the philosophy of life-long learning, I’m a full
-          stack developer with a deep passion for JavaScript, React and all
-          things web development. The unique combination of creativity, logic,
-          technology and never running out of new things to discover, drives my
-          excitement and passion for web development. When I’m not at my
-          computer I like to spend my time reading, keeping fit and playing
-          guitar.
+          I'm a full stack developer from Fairview, New Jersey who is passionate about
+          developing high quality applications. I enjoy collaborating in teams and 
+          thrive in fast paced environments. 
+
+          In my spare time I enjoy playing guitar, 
+
+          -Highly organized and detail-oriented 
+          -riendly and professional
         </p>
       </div>
+      <ul className="contact-info">
+        <li>alenjo874@gmail.com</li>
+      </ul>
     </div>
   );
 }

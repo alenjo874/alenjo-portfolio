@@ -26,7 +26,7 @@ function Home() {
             animate={{ y: -10 }}
             transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
           >
-            WELCOME
+            ALEN JO
           </motion.h1>
           <motion.div className="typewriter">
             <Typewriter
@@ -104,7 +104,6 @@ function Home() {
   return (
     <div className="pages-container home-page" id="home">
       <Text />
-      {/* <EasingComponent /> */}
     </div>
   );
 }

@@ -15,8 +15,9 @@ function Skills() {
     "Node.js",
     "Ruby",
     "Rails",
+    "Sinatra",
     "SQL",
-    "MySQL",
+    "PostgreSQL",
     "Git",
   ];
 

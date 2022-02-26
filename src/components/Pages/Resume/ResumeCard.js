@@ -27,7 +27,7 @@ function ResumeCard({
           </a>
         </div>
         <div className="company-details">
-          <span>
+          <span className="company-loc">
             <a href={link} target="_blank" className="company-link">
               <h4 className="company-name">{company}</h4>
             </a>

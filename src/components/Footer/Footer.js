@@ -12,7 +12,7 @@ function Footer() {
         offset={-80}
         duration={500}
       >
-        <ul>Back to Top</ul>
+        <ul className="footer-element">Back to Top</ul>
       </Link>
     </div>
   );
