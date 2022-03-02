@@ -1,34 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { useSpring, animated, config, easings } from "react-spring";
-import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 function Home() {
   function Text() {
-    const props = useSpring({
-      to: { opacity: 1 },
-      from: { opacity: 0 },
-      delay: 400,
-      config: config.slow,
-    });
-
     return (
-      <animated.h1 style={props}>
+      <h1>
         <div className="home-page">
-          <motion.h1
-            className="hollow-outline"
-            whileHover={{
-              scale: 1.2,
-              textShadow: "0px 0px 8px rgb(255, 255, 255) ",
-            }}
-            initial={{ y: -250 }}
-            animate={{ y: -10 }}
-            transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
-          >
-            ALEN JO
-          </motion.h1>
-          <motion.div className="typewriter">
+          <div className="home-content">
+            <motion.h1
+              className="hollow-outline"
+              initial={{ y: -250 }}
+              animate={{ y: -10 }}
+              transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
+            >
+              ALEN JO
+            </motion.h1>
+            {/* <motion.div className="typewriter">
             <Typewriter
               options={{
                 strings: ["Full Stack Developer", "React Developer"],
@@ -36,10 +25,25 @@ function Home() {
                 loop: true,
               }}
             />
-          </motion.div>
-          <Link
-            activeClass="active"
-            to="aboutme"
+          </motion.div> */}
+            <span className="home-short-about">
+              <p>
+                I'm a full stack developer from Fairview, New Jersey who is
+                passionate about developing high quality applications. I enjoy
+                collaborating in teams and thrive in fast paced environments. In
+                my spare time I enjoy playing guitar, -Highly organized and
+                detail-oriented -riendly and professional
+              </p>
+            </span>
+            <ul className="home-links">
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+            </ul>
+          </div>
+          <NavLink
+            to="/main"
             spy={true}
             smooth={true}
             offset={-85}
@@ -47,59 +51,16 @@ function Home() {
           >
             <motion.button
               whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
+              whileTap={{ scale: 0.95 }}
               className="view-work-btn"
             >
               View My Work
             </motion.button>
-          </Link>
+          </NavLink>
         </div>
-      </animated.h1>
+      </h1>
     );
   }
-
-  function EasingComponent() {
-    const { background, rotateZ } = useSpring({
-      from: {
-        background: "#4dd2ff",
-        rotateZ: 0,
-      },
-      to: {
-        background: "#1a1a1a",
-        rotateZ: 720,
-      },
-      config: {
-        duration: 2250,
-        easing: easings.easeInOutQuart,
-      },
-      loop: { reverse: false },
-    });
-
-    return (
-      <animated.div
-        style={{
-          background,
-          width: 120,
-          height: 120,
-          borderRadius: 16,
-          rotateZ,
-        }}
-      >
-        <Link
-          activeClass="active"
-          to="aboutme"
-          spy={true}
-          smooth={true}
-          offset={-85}
-          duration={500}
-        >
-          <div className="view-work">View My Work</div>
-        </Link>
-      </animated.div>
-    );
-  }
-
-  function enter() {}
 
   return (
     <div className="pages-container home-page" id="home">

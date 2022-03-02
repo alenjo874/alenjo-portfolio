@@ -1,17 +1,25 @@
-import logo from "./logo.svg";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
 import "./App.css";
 import PagesContainer from "./components/Pages/PagesContainer";
 import Home from "./components/Pages/Home/Home";
 import NavBarConatiner from "./components/Header/NavBarContainer";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <NavBarConatiner />
-      <PagesContainer />
-      <Footer />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/main">
+          <NavBarConatiner />
+          <PagesContainer />
+          <Footer />
+        </Route>
+      </Switch>
     </div>
   );
 }
