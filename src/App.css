@@ -64,9 +64,6 @@ img {
   display: flex;
 }
 
-.home-name-element {
-}
-
 .home-name-element:hover {
   -webkit-text-fill-color: #4dd2ff;
 }
@@ -81,6 +78,14 @@ img {
   background-color: #272727;
   border-radius: 20px;
   padding: 10px;
+}
+
+.view-work-btn:hover {
+  background-color: #4dd2ff;
+}
+
+.view-work-btn:active {
+  background-color: #272727;
 }
 
 .navbar {

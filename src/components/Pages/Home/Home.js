@@ -4,6 +4,11 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
 function Home() {
+  const fadeDownIn = {
+    initial: { y: 30, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   function Text() {
     return (
       <h1>
@@ -11,9 +16,8 @@ function Home() {
           <div className="home-content">
             <motion.h1
               className="hollow-outline"
-              initial={{ y: -250 }}
-              animate={{ y: -10 }}
-              transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
+              {...fadeDownIn}
+              transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}
             >
               <span className="home-name">
                 <li className="home-name-element">A</li>
@@ -34,7 +38,11 @@ function Home() {
               }}
             />
           </motion.div> */}
-            <span className="home-short-about">
+            <motion.span
+              className="home-short-about"
+              {...fadeDownIn}
+              transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+            >
               <p>
                 I'm a full stack developer from Fairview, New Jersey who is
                 passionate about developing high quality applications. I enjoy
@@ -42,13 +50,17 @@ function Home() {
                 my spare time I enjoy playing guitar, -Highly organized and
                 detail-oriented -riendly and professional
               </p>
-            </span>
-            <ul className="home-links">
+            </motion.span>
+            <motion.ul
+              className="home-links"
+              {...fadeDownIn}
+              transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+            >
               <li>link</li>
               <li>link</li>
               <li>link</li>
               <li>link</li>
-            </ul>
+            </motion.ul>
           </div>
           <NavLink
             to="/main"
@@ -58,8 +70,8 @@ function Home() {
             duration={500}
           >
             <motion.button
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.95 }}
+              {...fadeDownIn}
+              transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
               className="view-work-btn"
             >
               View My Work
