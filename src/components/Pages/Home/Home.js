@@ -17,7 +17,7 @@ function Home() {
             <motion.h1
               className="hollow-outline"
               {...fadeDownIn}
-              transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}
+              transition={{ delay: 0.1, duration: 0.8, ease: "easeIn" }}
             >
               <span className="home-name">
                 <li className="home-name-element">A</li>
@@ -41,7 +41,7 @@ function Home() {
             <motion.span
               className="home-short-about"
               {...fadeDownIn}
-              transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+              transition={{ delay: 0.2, duration: 0.8, ease: "easeIn" }}
             >
               <p>
                 I'm a full stack developer from Fairview, New Jersey who is
@@ -54,7 +54,7 @@ function Home() {
             <motion.ul
               className="home-links"
               {...fadeDownIn}
-              transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+              transition={{ delay: 0.3, duration: 0.8, ease: "easeIn" }}
             >
               <li>link</li>
               <li>link</li>
@@ -71,7 +71,7 @@ function Home() {
           >
             <motion.button
               {...fadeDownIn}
-              transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+              transition={{ delay: 0.4, duration: 0.8, ease: "easeIn" }}
               className="view-work-btn"
             >
               View My Work

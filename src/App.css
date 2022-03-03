@@ -9,7 +9,6 @@
   padding: 0;
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #1a1a1a;
 }
 
 img {
@@ -96,6 +95,15 @@ img {
   background-color: #272727;
   position: sticky;
   top: 0;
+}
+
+.nav-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #1a1a1a;
 }
 
 .navbar > .active {

@@ -1,7 +1,13 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 function NavBarElements() {
+  const fadeDownIn = {
+    initial: { y: -40, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
     <>
       <Link
@@ -12,7 +18,13 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <ul className="navbar-elements">About Me</ul>
+        <motion.ul
+          className="navbar-elements"
+          {...fadeDownIn}
+          transition={{ delay: 0.2, duration: 0.26, ease: "easeIn" }}
+        >
+          About
+        </motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -22,7 +34,8 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <ul className="navbar-elements">Projects</ul>
+        <motion.ul className="navbar-elements"  {...fadeDownIn}
+          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}>Projects</motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -32,7 +45,8 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <ul className="navbar-elements">Skills</ul>
+        <motion.ul className="navbar-elements"  {...fadeDownIn}
+          transition={{ delay: 0.4, duration: 0.26, ease: "easeIn" }}>Skills</motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -42,7 +56,8 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <ul className="navbar-elements">Resume</ul>
+        <motion.ul className="navbar-elements"  {...fadeDownIn}
+          transition={{ delay: 0.5, duration: 0.26, ease: "easeIn" }}>Resume</motion.ul>
       </Link>
     </>
   );
