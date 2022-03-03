@@ -29,15 +29,27 @@ function ProjectIcon({
     />
   );
 
+  const scrollShowAnimation = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: true },
+    transition: { duration: 0.5 },
+    variants: {
+      hidden: { opacity: 0, scale: 0, y: -150 },
+      visible: { opacity: 1, scale: 1, y: 0 },
+      ease: "easeOut",
+    },
+  };
+
   return (
     <>
-      <div className="project-image">
+      <motion.div className="project-image" {...scrollShowAnimation}>
         <img
           onClick={displayPopUp}
           src={image}
           onClick={() => setIsCardClick(true)}
         ></img>
-      </div>
+      </motion.div>
       <AnimatePresence>
         {isCardClick ? (
           <div key="box" className="project-card-container">

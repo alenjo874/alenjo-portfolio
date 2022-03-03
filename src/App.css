@@ -59,6 +59,18 @@ img {
   position: relative;
 }
 
+.home-name {
+  list-style: none;
+  display: flex;
+}
+
+.home-name-element {
+}
+
+.home-name-element:hover {
+  -webkit-text-fill-color: #4dd2ff;
+}
+
 .typewriter {
   position: relative;
   top: -150px;
@@ -105,7 +117,6 @@ img {
 .skills-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 

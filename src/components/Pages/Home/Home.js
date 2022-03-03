@@ -15,7 +15,15 @@ function Home() {
               animate={{ y: -10 }}
               transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
             >
-              ALEN JO
+              <span className="home-name">
+                <li className="home-name-element">A</li>
+                <li className="home-name-element">L</li>
+                <li className="home-name-element">E</li>
+                <li className="home-name-element">N</li>
+                &nbsp;
+                <li className="home-name-element">J</li>
+                <li className="home-name-element">O</li>
+              </span>
             </motion.h1>
             {/* <motion.div className="typewriter">
             <Typewriter
