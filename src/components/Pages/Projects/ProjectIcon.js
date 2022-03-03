@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectsCard from "./ProjectsCard";
 import { v4 as uuidv4 } from "uuid";
+import { AnimatePresence, motion } from "framer-motion";
 
 function ProjectIcon({
   name,
@@ -37,9 +38,13 @@ function ProjectIcon({
           onClick={() => setIsCardClick(true)}
         ></img>
       </div>
-      {isCardClick ? (
-        <div className="project-card-container">{displayProjects}</div>
-      ) : null}
+      <AnimatePresence>
+        {isCardClick ? (
+          <div key="box" className="project-card-container">
+            {displayProjects}
+          </div>
+        ) : null}
+      </AnimatePresence>
     </>
   );
 }
