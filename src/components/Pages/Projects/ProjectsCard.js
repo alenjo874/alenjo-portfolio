@@ -21,15 +21,22 @@ function ProjectsCard({
   return (
     <motion.div
       className="project-card"
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+
+        transition: {
+          duration: 0.35,
+          type: "show",
+          ease: "easeIn",
+        },
+      }}
       exit={{
         y: "50%",
         opacity: 0,
-        duration: 0.1,
-        transition: { duration: 0.2 },
+        transition: { duration: 0.3, ease: "easeOut" },
       }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
     >
       <div className="project-card-image">
         <img src={image} />

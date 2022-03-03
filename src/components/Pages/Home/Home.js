@@ -8,6 +8,14 @@ function Home() {
     initial: { y: 30, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
+  const fadeDownRight = {
+    initial: { x: -30, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  };
+  const fadeDownLeft = {
+    initial: { x: 30, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  };
 
   function Text() {
     return (
@@ -16,7 +24,7 @@ function Home() {
           <div className="home-content">
             <motion.h1
               className="hollow-outline"
-              {...fadeDownIn}
+              {...fadeDownRight}
               transition={{ delay: 0.1, duration: 0.8, ease: "easeIn" }}
             >
               <span className="home-name">
@@ -40,7 +48,7 @@ function Home() {
           </motion.div> */}
             <motion.span
               className="home-short-about"
-              {...fadeDownIn}
+              {...fadeDownRight}
               transition={{ delay: 0.2, duration: 0.8, ease: "easeIn" }}
             >
               <p>
@@ -53,7 +61,7 @@ function Home() {
             </motion.span>
             <motion.ul
               className="home-links"
-              {...fadeDownIn}
+              {...fadeDownRight}
               transition={{ delay: 0.3, duration: 0.8, ease: "easeIn" }}
             >
               <li>link</li>
@@ -70,7 +78,7 @@ function Home() {
             duration={500}
           >
             <motion.button
-              {...fadeDownIn}
+              {...fadeDownRight}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeIn" }}
               className="view-work-btn"
             >

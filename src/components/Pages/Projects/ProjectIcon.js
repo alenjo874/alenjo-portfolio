@@ -33,21 +33,26 @@ function ProjectIcon({
     initial: "hidden",
     whileInView: "visible",
     viewport: { once: true },
-    transition: { duration: 0.5 },
+    transition: { duration: 0.25 },
     variants: {
       hidden: { opacity: 0, scale: 0, y: -150 },
       visible: { opacity: 1, scale: 1, y: 0 },
-      ease: "easeOut",
+      ease: "easeIn",
     },
   };
 
   return (
     <>
-      <motion.div className="project-image" {...scrollShowAnimation}>
+      <motion.div
+        className="project-image"
+        whileHover={{ scale: 1.2 }}
+        {...scrollShowAnimation}
+      >
         <img
           onClick={displayPopUp}
           src={image}
           onClick={() => setIsCardClick(true)}
+          className="project-icon-element"
         ></img>
       </motion.div>
       <AnimatePresence>

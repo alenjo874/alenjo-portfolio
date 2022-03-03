@@ -227,12 +227,7 @@ img {
 .project-image {
   max-width: 350px;
   margin: 50px;
-  transition: 0.2s ease-in-out;
   border: 3px solid blueviolet;
-}
-
-.project-image:hover {
-  transform: scale(1.1);
 }
 
 #resume {

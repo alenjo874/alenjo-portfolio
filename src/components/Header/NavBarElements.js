@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function NavBarElements() {
   const fadeDownIn = {
-    initial: { y: -40, opacity: 0 },
+    initial: { y: -50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
@@ -21,7 +21,7 @@ function NavBarElements() {
         <motion.ul
           className="navbar-elements"
           {...fadeDownIn}
-          transition={{ delay: 0.2, duration: 0.26, ease: "easeIn" }}
+          transition={{ delay: 0.1, duration: 0.26, ease: "easeIn" }}
         >
           About
         </motion.ul>
@@ -35,7 +35,7 @@ function NavBarElements() {
         duration={500}
       >
         <motion.ul className="navbar-elements"  {...fadeDownIn}
-          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}>Projects</motion.ul>
+          transition={{ delay: 0.2, duration: 0.26, ease: "easeIn" }}>Projects</motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -46,7 +46,7 @@ function NavBarElements() {
         duration={500}
       >
         <motion.ul className="navbar-elements"  {...fadeDownIn}
-          transition={{ delay: 0.4, duration: 0.26, ease: "easeIn" }}>Skills</motion.ul>
+          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}>Skills</motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -57,7 +57,7 @@ function NavBarElements() {
         duration={500}
       >
         <motion.ul className="navbar-elements"  {...fadeDownIn}
-          transition={{ delay: 0.5, duration: 0.26, ease: "easeIn" }}>Resume</motion.ul>
+          transition={{ delay: 0.4, duration: 0.26, ease: "easeIn" }}>Resume</motion.ul>
       </Link>
     </>
   );
