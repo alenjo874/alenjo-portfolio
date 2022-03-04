@@ -5,12 +5,11 @@ import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 
 function PagesContainer() {
-
   const scrollShowAnimation = {
     initial: "hidden",
     whileInView: "visible",
     viewport: { once: true },
-    transition: { delay: 0.1, duration: 0.65 },
+    transition: { delay: 0.1, duration: 0.6 },
     variants: {
       hidden: { opacity: 0, scale: 0, y: -150 },
       visible: { opacity: 1, scale: 1, y: 0 },
@@ -22,8 +21,8 @@ function PagesContainer() {
     <div>
       <AboutMe />
       <Projects scrollShowAnimation={scrollShowAnimation} />
-      <Skills scrollShowAnimation={scrollShowAnimation}/>
-      <Resume scrollShowAnimation={scrollShowAnimation}/>
+      <Skills scrollShowAnimation={scrollShowAnimation} />
+      <Resume scrollShowAnimation={scrollShowAnimation} />
     </div>
   );
 }

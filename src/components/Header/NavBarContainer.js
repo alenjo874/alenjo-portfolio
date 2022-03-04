@@ -1,6 +1,8 @@
 import React from "react";
 import NavBarElements from "./NavBarElements";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function NavBarContainer() {
   return (
@@ -12,6 +14,9 @@ function NavBarContainer() {
         animate={{ y: 0 }}
         transition={{ duration: 0.45, ease: "easeIn" }}
       >
+        <button className="nav-hamburger">
+          <FontAwesomeIcon icon={faBars} />
+        </button>
         <NavBarElements />
       </motion.div>
     </>
