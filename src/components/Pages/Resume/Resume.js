@@ -2,7 +2,7 @@ import React from "react";
 import ResumeCard from "./ResumeCard";
 import { v4 as uuidv4 } from "uuid";
 
-function Resume() {
+function Resume({scrollShowAnimation}) {
   const experienceArray = [
     {
       company: "IMPERIAL DADE",
@@ -65,7 +65,7 @@ function Resume() {
   ];
 
   const displayResumeCard = experienceArray.map((experience) => {
-    return <ResumeCard key={uuidv4()} {...experience} />;
+    return <ResumeCard key={uuidv4()} {...experience} scrollShowAnimation={scrollShowAnimation}/>;
   });
 
   return (

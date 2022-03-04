@@ -10,6 +10,7 @@ function ProjectIcon({
   image,
   codingStack,
   displayPopUp,
+  scrollShowAnimation,
 }) {
   const [isCardClick, setIsCardClick] = useState(false);
 
@@ -28,18 +29,6 @@ function ProjectIcon({
       codingStack={codingStack}
     />
   );
-
-  const scrollShowAnimation = {
-    initial: "hidden",
-    whileInView: "visible",
-    viewport: { once: true },
-    transition: { delay: 0.1, duration: 0.5 },
-    variants: {
-      hidden: { opacity: 0, scale: 0, y: -150 },
-      visible: { opacity: 1, scale: 1, y: 0 },
-      ease: "easeIn",
-    },
-  };
 
   return (
     <>

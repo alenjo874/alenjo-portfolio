@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import { motion } from "framer-motion";
 
 function ResumeCard({
   company,
@@ -9,6 +10,7 @@ function ResumeCard({
   details,
   location,
   dates,
+  scrollShowAnimation
 }) {
   const displayWorkDetails = details.map((detail) => {
     return (
@@ -19,7 +21,7 @@ function ResumeCard({
   });
 
   return (
-    <div className="resume-card">
+    <motion.div className="resume-card" {...scrollShowAnimation}>
       <div className="resume-header">
         <div className="company-logo">
           <a href={link} target="_blank">
@@ -40,7 +42,7 @@ function ResumeCard({
         </div>
       </div>
       <div className="resume-info">{displayWorkDetails}</div>
-    </div>
+    </motion.div>
   );
 }
 

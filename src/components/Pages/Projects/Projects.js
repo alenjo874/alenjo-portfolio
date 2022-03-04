@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectIcon from "./ProjectIcon";
 import { v4 as uuidv4 } from "uuid";
 
-function Projects() {
+function Projects({ scrollShowAnimation }) {
   const projectsArray = [
     {
       name: "CinemaReviews",
@@ -42,7 +42,13 @@ function Projects() {
   ];
 
   const displayProjectImage = projectsArray.map((project) => {
-    return <ProjectIcon {...project} key={uuidv4()} />;
+    return (
+      <ProjectIcon
+        {...project}
+        key={uuidv4()}
+        scrollShowAnimation={scrollShowAnimation}
+      />
+    );
   });
 
   return (
