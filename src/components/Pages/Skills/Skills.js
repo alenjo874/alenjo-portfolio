@@ -24,11 +24,14 @@ function Skills() {
   const displaySkillsCard = skillsArray.map((skill) => {
     return <SkillsCard key={uuidv4()} skill={skill} />;
   });
+  
 
   return (
     <div className="pages-container skills-page" id="skills">
       <h2>Skills</h2>
-      <div className="skills-card-container">{displaySkillsCard}</div>
+      <div key="box" className="skills-card-container">
+        {displaySkillsCard}
+      </div>
     </div>
   );
 }
