@@ -34,8 +34,13 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <motion.ul className="navbar-elements"  {...fadeDownIn}
-          transition={{ delay: 0.2, duration: 0.26, ease: "easeIn" }}>Projects</motion.ul>
+        <motion.ul
+          className="navbar-elements"
+          {...fadeDownIn}
+          transition={{ delay: 0.2, duration: 0.26, ease: "easeIn" }}
+        >
+          Projects
+        </motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -45,8 +50,13 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <motion.ul className="navbar-elements"  {...fadeDownIn}
-          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}>Skills</motion.ul>
+        <motion.ul
+          className="navbar-elements"
+          {...fadeDownIn}
+          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}
+        >
+          Skills
+        </motion.ul>
       </Link>
       <Link
         activeClass="active"
@@ -56,8 +66,13 @@ function NavBarElements() {
         offset={-85}
         duration={500}
       >
-        <motion.ul className="navbar-elements"  {...fadeDownIn}
-          transition={{ delay: 0.4, duration: 0.26, ease: "easeIn" }}>Resume</motion.ul>
+        <motion.ul
+          className="navbar-elements"
+          {...fadeDownIn}
+          transition={{ delay: 0.4, duration: 0.26, ease: "easeIn" }}
+        >
+          Resume
+        </motion.ul>
       </Link>
     </>
   );

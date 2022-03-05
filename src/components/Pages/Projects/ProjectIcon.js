@@ -34,7 +34,6 @@ function ProjectIcon({
     <>
       <motion.div
         className="project-image"
-        whileHover={{ scale: 1.2 }}
         {...scrollShowAnimation}
       >
         <img
