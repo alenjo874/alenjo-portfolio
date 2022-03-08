@@ -55,7 +55,7 @@ function Home() {
               I'm a full stack developer located in Fairview, New Jersey who is
               passionate about developing high quality applications. I enjoy
               collaborating in teams and thrive in fast paced environments. In
-              my spare time I enjoy playing guitar and playing video games. 
+              my spare time I enjoy playing guitar and video games. 
               -Highly organized and
               detail-oriented -riendly and professional
             </p>
