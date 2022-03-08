@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function NavBarElements() {
   const fadeDownIn = {
-    initial: { y: -50, opacity: 0 },
+    initial: { y: -30, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
@@ -21,7 +21,7 @@ function NavBarElements() {
         <motion.ul
           className="navbar-elements"
           {...fadeDownIn}
-          transition={{ delay: 0.1, duration: 0.26, ease: "easeIn" }}
+          transition={{ delay: 0.15, duration: 0.26, ease: "easeIn" }}
         >
           About
         </motion.ul>
@@ -37,7 +37,7 @@ function NavBarElements() {
         <motion.ul
           className="navbar-elements"
           {...fadeDownIn}
-          transition={{ delay: 0.2, duration: 0.26, ease: "easeIn" }}
+          transition={{ delay: 0.25, duration: 0.26, ease: "easeIn" }}
         >
           Projects
         </motion.ul>
@@ -53,7 +53,7 @@ function NavBarElements() {
         <motion.ul
           className="navbar-elements"
           {...fadeDownIn}
-          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}
+          transition={{ delay: 0.35, duration: 0.26, ease: "easeIn" }}
         >
           Skills
         </motion.ul>
@@ -69,7 +69,7 @@ function NavBarElements() {
         <motion.ul
           className="navbar-elements"
           {...fadeDownIn}
-          transition={{ delay: 0.4, duration: 0.26, ease: "easeIn" }}
+          transition={{ delay: 0.45, duration: 0.26, ease: "easeIn" }}
         >
           Resume
         </motion.ul>

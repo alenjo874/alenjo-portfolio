@@ -52,10 +52,11 @@ function Home() {
             transition={{ delay: 0.2, duration: 0.8, ease: "easeIn" }}
           >
             <p>
-              I'm a full stack developer from Fairview, New Jersey who is
+              I'm a full stack developer located in Fairview, New Jersey who is
               passionate about developing high quality applications. I enjoy
               collaborating in teams and thrive in fast paced environments. In
-              my spare time I enjoy playing guitar, -Highly organized and
+              my spare time I enjoy playing guitar and playing video games. 
+              -Highly organized and
               detail-oriented -riendly and professional
             </p>
           </motion.span>
