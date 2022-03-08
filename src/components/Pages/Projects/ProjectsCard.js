@@ -1,6 +1,8 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faSolid } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectsCard({
   name,
@@ -42,8 +44,13 @@ function ProjectsCard({
         <img src={image} />
       </div>
       <div className="project-details">
-        <div className="project-name">
-          <h4>{name}</h4>
+        <div className="project-card-header">
+          <div className="project-name">
+            <h4>{name}</h4>
+          </div>
+          <button className="hide-button" onClick={() => setIsCardClick(false)}>
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
         </div>
         <div className="project-stack">{displayStack}</div>
         <div className="project-about">
@@ -51,11 +58,10 @@ function ProjectsCard({
         </div>
         <div className="project-links">
           <p>Demo</p>
-          <p>{github}</p>
+          <a href={github} target="_blank" className="github-logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img>
+          </a>
         </div>
-        <button className="hide-button" onClick={() => setIsCardClick(false)}>
-          Hide
-        </button>
       </div>
     </motion.div>
   );

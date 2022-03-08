@@ -2,7 +2,9 @@
 
 /* #4dd2ff
 #1A1A1A
-#272727 */
+#272727 
+BFD7EA
+*/
 
 * {
   margin: 0;
@@ -18,10 +20,9 @@ img {
 .pages-container {
   height: 100vh;
   background-color: #1a1a1a;
-  /* border: 2px solid red; */
   overflow-x: hidden;
+  /* border: 2px solid red; */
 }
-
 
 .home-page {
   display: flex;
@@ -182,8 +183,8 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  height: 600px;
-  max-width: 900px;
+  max-width: 800px;
+  margin-top: 50px;
   /* border: 2px solid red; */
 }
 
@@ -195,6 +196,12 @@ img {
   height: 110px;
   margin: 25px;
   border: 2px solid #272727;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-card-container {
@@ -222,6 +229,11 @@ img {
   max-width: 900px;
   background-color: #1a1a1a;
   /* border: 2px solid yellow; */
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-card-image {
@@ -267,7 +279,20 @@ img {
 .hide-button {
   max-width: 300px;
   border-radius: 25px;
-  background-color: #1a1a1a;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hide-button:hover {
+  transform: scale(1.2);
+}
+
+.hide-button:active {
+  transform: scale(1);
 }
 
 .project-image {
@@ -282,6 +307,20 @@ img {
   display: block;
   margin: 0 auto;
   object-fit: cover;
+}
+
+.github-logo {
+  margin-left: 50px;
+  width: 50px;
+  transition: 0.2s;
+}
+
+.github-logo:hover {
+  transform: scale(1.2);
+}
+
+.github-logo:active {
+  transform: scale(1);
 }
 
 #resume {

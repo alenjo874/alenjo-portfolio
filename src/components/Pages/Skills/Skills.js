@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 // import JS from "../images/JavaScript_Logo.png";
 // import REACT from "../images/React_Logo.png";
 
-function Skills({scrollShowAnimation}) {
+function Skills({ scrollShowAnimation }) {
   const skillsArray = [
     "HTML",
     "CSS",
@@ -22,13 +22,19 @@ function Skills({scrollShowAnimation}) {
   ];
 
   const displaySkillsCard = skillsArray.map((skill) => {
-    return <SkillsCard key={uuidv4()} skill={skill} scrollShowAnimation={scrollShowAnimation}/>;
+    return (
+      <SkillsCard
+        key={uuidv4()}
+        skill={skill}
+        scrollShowAnimation={scrollShowAnimation}
+      />
+    );
   });
-  
 
   return (
     <div className="pages-container skills-page" id="skills">
       <h2>Skills</h2>
+
       <div key="box" className="skills-card-container">
         {displaySkillsCard}
       </div>
