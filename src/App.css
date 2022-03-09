@@ -24,6 +24,23 @@ img {
   /* border: 2px solid red; */
 }
 
+.pages-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .pages-name {
+  position: absolute;
+} */
+
+.header-backdrop {
+  /* top: 35px; */
+  background: #4dd2ff;
+  width: 80px;
+  height: 10px;
+}
+
 .home-page {
   display: flex;
   flex-direction: column;

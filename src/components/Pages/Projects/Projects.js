@@ -53,7 +53,10 @@ function Projects({ scrollShowAnimation }) {
 
   return (
     <div className="pages-container" id="projects">
-      <h2>Projects</h2>
+      <div className="pages-header-container">
+        <h2 className="pages-name">Projects</h2>
+        <div className="header-backdrop"></div>
+      </div>
       <div className="project-icon">
         {/* <img
           onClick={displayPopUp}
@@ -61,7 +64,6 @@ function Projects({ scrollShowAnimation }) {
         ></img> */}
         {displayProjectImage}
       </div>
-
     </div>
   );
 }
