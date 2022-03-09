@@ -31,17 +31,24 @@ function ProjectIcon({
   );
 
   return (
-    <>
-      <motion.div
-        className="project-image"
-        {...scrollShowAnimation}
-      >
+    <div>
+ 
+      <motion.div className="project-image" {...scrollShowAnimation}>
         <img
-          onClick={displayPopUp}
           src={image}
           // onClick={() => setIsCardClick(true)}
           className="project-icon-element"
         ></img>
+        <div className="project-highlight">
+          <h4 className="project-highlight-element">{name}</h4>
+          <p className="project-highlight-element">{description}</p>
+          <button
+            onClick={displayPopUp}
+            className="see-more-button btn draw-border"
+          >
+            See More{" "}
+          </button>
+        </div>
       </motion.div>
       <AnimatePresence>
         {isCardClick ? (
@@ -50,7 +57,7 @@ function ProjectIcon({
           </div>
         ) : null}
       </AnimatePresence>
-    </>
+    </div>
   );
 }
 

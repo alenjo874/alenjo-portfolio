@@ -20,7 +20,6 @@ img {
 .pages-container {
   height: 100vh;
   background-color: #1a1a1a;
-  overflow-x: hidden;
   /* border: 2px solid red; */
 }
 
@@ -230,6 +229,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
+}
+
+.project-intro {
+  width: 500px;
+}
+
+.project-intro-container {
+  margin: 50px 0;
 }
 
 .project-card-container {
@@ -241,6 +249,7 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -257,7 +266,67 @@ img {
   max-width: 900px;
   background-color: #1a1a1a;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
   /* border: 2px solid yellow; */
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 3px #fff;
+  color: #fff;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+}
+
+.draw-border::after {
+  border-top-width: 3px;
+  border-right-width: 3px;
+}
+
+.draw-border:hover {
+  color: #4dd2ff;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #4dd2ff;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.see-more-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.05rem;
 }
 
 .project-card-header {
@@ -327,15 +396,29 @@ img {
 .project-image {
   max-width: 350px;
   margin: 50px;
+  background-color: #272727;
+  border-radius: 12px;
   /* border: 3px solid blueviolet; */
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .project-icon-element {
-  max-width: 100%;
-  width: auto;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
+  border-radius: 12px;
+  /* border: 2px solid; */
+}
+
+.project-highlight {
+  background-color: #272727;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.project-highlight-element {
+  margin: 15px 0;
 }
 
 .github-logo {

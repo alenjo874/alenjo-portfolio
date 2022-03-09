@@ -81,7 +81,7 @@ function Home() {
           <motion.button
             {...fadeDownRight}
             transition={{ delay: 0.4, duration: 0.8, ease: "easeIn" }}
-            className="view-work-btn"
+            className="see-more-button btn draw-border"
           >
             View My Work
           </motion.button>

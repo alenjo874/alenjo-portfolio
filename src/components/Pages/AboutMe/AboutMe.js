@@ -16,7 +16,6 @@ function AboutMeContainer() {
       <ul className="contact-info">
         <li>alenjo874@gmail.com</li>
       </ul>
-      <img src={require("")} />
     </div>
   );
 }

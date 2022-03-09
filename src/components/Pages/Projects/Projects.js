@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectIcon from "./ProjectIcon";
 import { v4 as uuidv4 } from "uuid";
+import { motion } from "framer-motion";
 
 function Projects({ scrollShowAnimation }) {
   const projectsArray = [
@@ -57,6 +58,14 @@ function Projects({ scrollShowAnimation }) {
         <h2 className="pages-name">Projects</h2>
         <div className="header-backdrop"></div>
       </div>
+      <motion.span className="project-intro-container" {...scrollShowAnimation}>
+        <h3> Projects showcase</h3>
+        <p className="project-intro">
+          Please take a look at some projects I've recently finished and find
+          the full story on how I built our clients achieve success in the
+          digital world.
+        </p>
+      </motion.span>
       <div className="project-icon">
         {/* <img
           onClick={displayPopUp}
@@ -64,7 +73,6 @@ function Projects({ scrollShowAnimation }) {
         ></img> */}
         {displayProjectImage}
       </div>
-
     </div>
   );
 }
