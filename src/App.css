@@ -140,7 +140,7 @@ img {
 .navbar {
   display: flex;
   height: 80px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-color: #272727;
   position: sticky;
@@ -157,12 +157,21 @@ img {
   background-color: #1a1a1a;
 }
 
+.nav-mylogo {
+  margin: auto;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size:1.5rem;
+}
+
 .navbar > .active {
   border-bottom: 3px solid #4dd2ff;
 }
 
 .navbar-elements {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   padding: 25px;
   background-color: #272727;
