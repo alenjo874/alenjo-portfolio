@@ -101,7 +101,7 @@ img {
   padding: 10px;
   font-size: 1rem;
   outline: none;
-  border: 3px solid #4dd2ff;
+  border: 2px solid #4dd2ff;
   position: relative;
   z-index: 1;
   background-color: #1a1a1a;
@@ -109,7 +109,8 @@ img {
 
 .view-work-btn:hover {
   cursor: pointer;
-  color: #fff;
+  color: #272727;
+  border: 2px solid #fff;
 }
 
 .view-work-btn:before {
@@ -144,7 +145,7 @@ img {
   background-color: #272727;
   position: sticky;
   top: 0;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
 .nav-back {
