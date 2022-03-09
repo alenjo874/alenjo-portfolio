@@ -64,6 +64,7 @@ function Projects({ scrollShowAnimation }) {
         ></img> */}
         {displayProjectImage}
       </div>
+
     </div>
   );
 }

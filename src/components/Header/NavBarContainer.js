@@ -16,7 +16,13 @@ function NavBarContainer() {
         transition={{ duration: 0.45, ease: "easeIn" }}
       >
         <div className="nav-mylogo">
-          <p>alen jo</p>
+          <motion.p
+            initial={{ y: -15, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.25, duration: 0.26, ease: "easeIn" }}
+          >
+            alen jo
+          </motion.p>
         </div>
         <button className="nav-hamburger">
           <FontAwesomeIcon icon={faBars} />

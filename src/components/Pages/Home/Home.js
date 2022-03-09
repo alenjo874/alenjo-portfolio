@@ -93,6 +93,7 @@ function Home() {
   return (
     <div className="pages-container home-page" id="home">
       <Text />
+      
     </div>
   );
 }
