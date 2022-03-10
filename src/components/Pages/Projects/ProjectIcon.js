@@ -32,7 +32,6 @@ function ProjectIcon({
 
   return (
     <div>
- 
       <motion.div className="project-image" {...scrollShowAnimation}>
         <img
           src={image}
@@ -42,10 +41,7 @@ function ProjectIcon({
         <div className="project-highlight">
           <h4 className="project-highlight-element">{name}</h4>
           <p className="project-highlight-element">{description}</p>
-          <button
-            onClick={displayPopUp}
-            className="see-more-button btn draw-border"
-          >
+          <button onClick={displayPopUp} className="view-work-btn">
             See More{" "}
           </button>
         </div>

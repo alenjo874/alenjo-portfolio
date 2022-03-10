@@ -101,14 +101,14 @@ img {
   font-size: 1rem;
   outline: none;
   border: 2px solid #4dd2ff;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   background-color: #1a1a1a;
 }
 
 .view-work-btn:hover {
   cursor: pointer;
-  color: #272727;
+  color: #fff;
   border: 2px solid #fff;
 }
 
