@@ -246,6 +246,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .skills-card-container {
@@ -263,10 +264,21 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 110px;
+  width: 200px;
+  height: 200px;
   margin: 25px;
   border: 2px solid #272727;
+}
+
+.skills-logo-container {
+  width: 100px;
+  height: 100px;
+}
+
+.skills-logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
 
 #projects {
@@ -610,7 +622,6 @@ img {
   }
 
   .skills-card {
-
     width: 80px;
     height: 60px;
   }

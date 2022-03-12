@@ -2,19 +2,17 @@ import React from "react";
 import SkillsCard from "./SkillsCard";
 import { v4 as uuidv4 } from "uuid";
 function Skills({ scrollShowAnimation }) {
-
   const skillsArray = [
     { code: "HTML", logo: "/images/HTML5Logo.png" },
-    { code: "CSS", logo: "/images/HTML5Logo.png" },
-    { code: "JavaScript", logo: "/images/HTML5Logo.png" },
-    { code: "React", logo: "/images/HTML5Logo.png" },
-    { code: "Node.js", logo: "/images/HTML5Logo.png" },
-    { code: "Ruby", logo: "/images/HTML5Logo.png" },
-    { code: "Rails", logo: "/images/HTML5Logo.png" },
-    { code: "Sinatra", logo: "/images/HTML5Logo.png" },
-    { code: "SQL", logo: "/images/HTML5Logo.png" },
-    { code: "PostgreSQL", logo: "/images/HTML5Logo.png" },
-    { code: "Git", logo: "/images/HTML5Logo.png" },
+    { code: "CSS", logo: "/images/CSS3Logo.png" },
+    { code: "JavaScript", logo: "/images/JavaScriptLogo.png" },
+    { code: "React", logo: "/images/ReactLogo.png" },
+    { code: "Node.js", logo: "/images/NodeLogo.png" },
+    { code: "Ruby", logo: "/images/RubyLogo.png" },
+    { code: "Rails", logo: "/images/RailsLogo.png" },
+    { code: "Sinatra", logo: "/images/SinatraLogo.png" },
+    { code: "PostgreSQL", logo: "/images/PostgressLogo.png" },
+    { code: "Git", logo: "/images/GitLogo.png" },
   ];
 
   const displaySkillsCard = skillsArray.map((skill) => {
