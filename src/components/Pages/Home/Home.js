@@ -58,16 +58,19 @@ function Home() {
               organized and detail-oriented -riendly and professional
             </p>
           </motion.span>
-          <motion.ul
+          <motion.div
             className="home-links"
             {...fadeDownRight}
             transition={{ delay: 0.3, duration: 0.8, ease: "easeIn" }}
           >
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-          </motion.ul>
+            <a
+              href="https://github.com/alenjo874"
+              target="_blank"
+              className="github-logo"
+            >
+              <img src="/images/GitHub.png" />
+            </a>
+          </motion.div>
         </div>
         <NavLink
           to="/main"
@@ -91,7 +94,6 @@ function Home() {
   return (
     <div className="pages-container home-page" id="home">
       <Text />
-
     </div>
   );
 }

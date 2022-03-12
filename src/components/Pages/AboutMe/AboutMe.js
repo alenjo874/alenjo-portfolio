@@ -1,9 +1,21 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function AboutMeContainer() {
   return (
     <div className="pages-container" id="aboutme">
-      AboutMeContainer
+      <div className="pages-header-container">
+        <h2 className="pages-name">About Me</h2>
+        <div className="header-backdrop"></div>
+      </div>
+      <span className="project-intro-container">
+        <h3> Projects showcase</h3>
+        <p className="page-intro">
+          Please take a look at some projects I've recently finished and find
+          the full story on how I built our clients achieve success in the
+          digital world.
+        </p>
+      </span>
       <div className="about-desc">
         <p>
           I'm a full stack developer from Fairview, New Jersey who is passionate

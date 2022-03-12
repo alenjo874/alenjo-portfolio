@@ -27,8 +27,18 @@ function Skills({ scrollShowAnimation }) {
 
   return (
     <div className="pages-container skills-page" id="skills">
-      <h2>Skills</h2>
-
+      <div className="pages-header-container">
+        <h2>Skills</h2>
+        <div className="header-backdrop"></div>
+      </div>
+      <span className="project-intro-container">
+        <h3> Projects showcase</h3>
+        <p className="page-intro">
+          Please take a look at some projects I've recently finished and find
+          the full story on how I built our clients achieve success in the
+          digital world.
+        </p>
+      </span>
       <div key="box" className="skills-card-container">
         {displaySkillsCard}
       </div>

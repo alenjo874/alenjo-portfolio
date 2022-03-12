@@ -60,9 +60,8 @@ function Projects({ scrollShowAnimation }) {
       <motion.span className="project-intro-container" {...scrollShowAnimation}>
         <h3> Projects showcase</h3>
         <p className="page-intro">
-          Please take a look at some projects I've recently finished and find
-          the full story on how I built our clients achieve success in the
-          digital world.
+          Please take a look at some of the projects I've recently finished and find
+          the full story on how I built them, and stack that I utilized. 
         </p>
       </motion.span>
       <div className="project-icon">{displayProjectImage}</div>

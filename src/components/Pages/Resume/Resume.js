@@ -2,7 +2,7 @@ import React from "react";
 import ResumeCard from "./ResumeCard";
 import { v4 as uuidv4 } from "uuid";
 
-function Resume({scrollShowAnimation}) {
+function Resume({ scrollShowAnimation }) {
   const experienceArray = [
     {
       company: "IMPERIAL DADE",
@@ -65,12 +65,28 @@ function Resume({scrollShowAnimation}) {
   ];
 
   const displayResumeCard = experienceArray.map((experience) => {
-    return <ResumeCard key={uuidv4()} {...experience} scrollShowAnimation={scrollShowAnimation}/>;
+    return (
+      <ResumeCard
+        key={uuidv4()}
+        {...experience}
+        scrollShowAnimation={scrollShowAnimation}
+      />
+    );
   });
 
   return (
     <div className="pages-container" id="resume">
-      <h2>Resume</h2>
+      <div className="pages-header-container">
+        <h2>Resume</h2>
+        <div className="header-backdrop"></div>
+      </div>
+      <span className="project-intro-container">
+        <h3>Professional Experience</h3>
+        <p className="page-intro">
+          Please take a look at my previous work history where I have explained my responsibilities 
+          and duties. 
+        </p>
+      </span>
       <div className="resume">{displayResumeCard}</div>
     </div>
   );
