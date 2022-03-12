@@ -3,6 +3,7 @@ import NavBarElements from "./NavBarElements";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 function NavBarContainer() {
   return (
@@ -16,13 +17,22 @@ function NavBarContainer() {
         transition={{ duration: 0.45, ease: "easeIn" }}
       >
         <div className="nav-mylogo">
-          <motion.p
-            initial={{ y: -15, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.25, duration: 0.26, ease: "easeIn" }}
+          <NavLink
+            to="/"
+            spy={true}
+            smooth={true}
+            offset={-85}
+            duration={500}
+            style={{ textDecoration: "none" }}
           >
-            alen jo
-          </motion.p>
+            <motion.p
+              initial={{ y: -15, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.25, duration: 0.26, ease: "easeIn" }}
+            >
+              alen jo
+            </motion.p>
+          </NavLink>
         </div>
         <button className="nav-hamburger">
           <FontAwesomeIcon icon={faBars} />
