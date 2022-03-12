@@ -6,21 +6,20 @@ import { motion } from "framer-motion";
 function Projects({ scrollShowAnimation }) {
   const projectsArray = [
     {
-      name: "CinemaReviews",
+      name: "Cinema Reviews",
       github: "https://github.com/alenjo874/cinema-review-app",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      image: "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
-      codingStack: ["JavaScript", "React", "CSS", "HTML"],
+      image: "/images/CinemaReviewApp.png",
+      codingStack: ["React", "JavaScript", "HTML/CSS"],
     },
     {
-      name: "Skyline",
-      github: "https://github.com/alenjo874/cinema-review-app",
+      name: "Studia",
+      github: "https://github.com/alenjo874/study-focus-app",
       description:
         "Skyline ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCosNE8U8r4l6IY0NHJ7icaHynM8gFLQimNg&usqp=CAU",
-      codingStack: ["Skyline", "React", "CSS", "HTML"],
+      image: "/images/StudiaApp.png",
+      codingStack: ["React", "JavaScript", "Ruby", "Sinatra"],
     },
     {
       name: "Bridge",
@@ -60,19 +59,13 @@ function Projects({ scrollShowAnimation }) {
       </div>
       <motion.span className="project-intro-container" {...scrollShowAnimation}>
         <h3> Projects showcase</h3>
-        <p className="project-intro">
+        <p className="page-intro">
           Please take a look at some projects I've recently finished and find
           the full story on how I built our clients achieve success in the
           digital world.
         </p>
       </motion.span>
-      <div className="project-icon">
-        {/* <img
-          onClick={displayPopUp}
-          src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"
-        ></img> */}
-        {displayProjectImage}
-      </div>
+      <div className="project-icon">{displayProjectImage}</div>
     </div>
   );
 }

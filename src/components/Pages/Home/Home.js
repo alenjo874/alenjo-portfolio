@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
-
 function Home() {
   const fadeDownIn = {
     initial: { y: 30, opacity: 0 },
@@ -55,9 +54,8 @@ function Home() {
               I'm a full stack developer located in Fairview, New Jersey who is
               passionate about developing high quality applications. I enjoy
               collaborating in teams and thrive in fast paced environments. In
-              my spare time I enjoy playing guitar and video games. 
-              -Highly organized and
-              detail-oriented -riendly and professional
+              my spare time I enjoy playing guitar and video games. -Highly
+              organized and detail-oriented -riendly and professional
             </p>
           </motion.span>
           <motion.ul
@@ -93,7 +91,7 @@ function Home() {
   return (
     <div className="pages-container home-page" id="home">
       <Text />
-      
+
     </div>
   );
 }

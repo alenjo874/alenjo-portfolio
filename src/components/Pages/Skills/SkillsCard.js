@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function SkillsCard({ skill, scrollShowAnimation }) {
-
+function SkillsCard({ code, logo, scrollShowAnimation }) {
   return (
     <motion.div
       className="skills-card"
@@ -10,7 +9,10 @@ function SkillsCard({ skill, scrollShowAnimation }) {
       // whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
       {...scrollShowAnimation}
     >
-      <h4>{skill}</h4>
+      <h4>{code}</h4>
+      <div>
+        <img src={logo} />
+      </div>
     </motion.div>
   );
 }

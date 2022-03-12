@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBarElements from "./NavBarElements";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import NavBarHamburger from "./NavBarHamburger";
 
 function NavBarContainer() {
+  const [showHamNav, setShowHamNav] = useState(false);
+
+  function handleShowHamNav() {
+    setShowHamNav((prev) => !prev);
+  }
+
   return (
     <>
       <div className="nav-back"></div>
@@ -25,20 +32,26 @@ function NavBarContainer() {
             duration={500}
             style={{ textDecoration: "none" }}
           >
-            <motion.p
+            <motion.li
               initial={{ y: -15, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.25, duration: 0.26, ease: "easeIn" }}
+              className="my-logo"
             >
               alen jo
-            </motion.p>
+            </motion.li>
           </NavLink>
         </div>
-        <button className="nav-hamburger">
+        <button className="nav-hamburger-btn" onClick={handleShowHamNav}>
           <FontAwesomeIcon icon={faBars} />
         </button>
         <NavBarElements />
       </motion.div>
+      <div className="nav-hamburger-container">
+        <AnimatePresence>
+        {showHamNav ? <NavBarHamburger setShowHamNav={setShowHamNav} /> : null}
+        </AnimatePresence>
+      </div>
     </>
   );
 }

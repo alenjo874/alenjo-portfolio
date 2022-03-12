@@ -59,7 +59,7 @@ function ProjectsCard({
         <div className="project-links">
           <p>Demo</p>
           <a href={github} target="_blank" className="github-logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img>
+            <img src="/images/GitHub.png" />
           </a>
         </div>
       </div>

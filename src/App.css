@@ -157,12 +157,26 @@ img {
 }
 
 .nav-mylogo {
+  list-style: none;
   margin: auto;
   margin-left: 0;
   margin-right: auto;
   padding: 0 30px;
   font-weight: 600;
   font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.my-logo:hover {
+  color: #4dd2ff;
+  transition: 0.2s;
+}
+
+.my-logo:active {
+  color: #4dd2ff;
+  transition: 0.2s;
+  transition: 0.1s;
+  color: #d3d3d3;
 }
 
 .navbar > .active {
@@ -182,11 +196,40 @@ img {
 }
 
 .navbar-elements:active {
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.1s;
+  color: #d3d3d3;
+}
+.nav-hamburger-container {
+  display: none;
+  position: fixed;
+  right: 0;
+  background-color: #272727;
+}
+
+.ham-elements-container {
+  background-color: #1a1a1a;
+}
+
+.navbar-ham-elements {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 25px;
+  background-color: #272727;
+  transition: 0.2s;
+}
+
+.navbar-ham-elements:hover {
+  color: #4dd2ff;
+}
+
+.navbar-ham-elements:active {
   transition: 0.1s;
   color: #d3d3d3;
 }
 
-.nav-hamburger {
+.nav-hamburger-btn {
   display: none;
   background-color: transparent;
   border: 0;
@@ -195,7 +238,7 @@ img {
   cursor: pointer;
 }
 
-.nav-hamburger:focus {
+.nav-hamburger-btn:focus {
   outline: none;
 }
 
@@ -217,6 +260,7 @@ img {
 
 .skills-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 140px;
@@ -232,8 +276,8 @@ img {
   height: auto;
 }
 
-.project-intro {
-  width: 500px;
+.page-intro {
+  max-width: 500px;
 }
 
 .project-intro-container {
@@ -398,17 +442,16 @@ img {
   margin: 50px;
   background-color: #272727;
   border-radius: 12px;
-  /* border: 3px solid blueviolet; */
   box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* border: 3px solid blueviolet; */
 }
 
 .project-icon-element {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   border-radius: 12px;
-  /* border: 2px solid; */
 }
 
 .project-highlight {
@@ -428,11 +471,13 @@ img {
 }
 
 .github-logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .github-logo:active {
   transform: scale(1);
+  transition: 0.2s;
 }
 
 #resume {
@@ -533,10 +578,14 @@ img {
   }
 }
 
-@media screen and (max-width: 481px) {
-  .nav-hamburger {
+@media screen and (max-width: 575px) {
+  .nav-hamburger-btn {
     position: absolute;
     right: 30px;
+    display: block;
+  }
+
+  .nav-hamburger-container {
     display: block;
   }
 
@@ -561,6 +610,7 @@ img {
   }
 
   .skills-card {
+
     width: 80px;
     height: 60px;
   }
