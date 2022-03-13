@@ -66,7 +66,7 @@ function Home() {
             <a
               href="https://github.com/alenjo874"
               target="_blank"
-              className="github-logo"
+              className="github-logo home-logos"
             >
               <img src="/images/GitHub.png" />
             </a>

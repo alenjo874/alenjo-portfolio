@@ -64,7 +64,9 @@ img {
 
 .home-links {
   display: flex;
+
   margin: 20px 0;
+
 }
 
 .hollow-outline {
@@ -508,6 +510,10 @@ img {
 .github-logo:active {
   transform: scale(1);
   transition: 0.2s;
+}
+
+.home-logos {
+  margin-left: 0;
 }
 
 #resume {
