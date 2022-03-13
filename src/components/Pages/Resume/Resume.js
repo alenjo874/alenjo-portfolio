@@ -10,13 +10,11 @@ function Resume({ scrollShowAnimation }) {
       link: "https://imperialdade.com/",
       position: "Senior Contracts Specialist",
       details: [
-        "Responsible for day to day supervision of five team members, including resolving performance issues, meeting project deadlines, and providing team guidance",
+        "Managed a team that included resolving performance issues, ensured that all projects are completed in time, and provided team guidance",
         "Ensure contract renewals, extensions, and amendments are uploaded into internal analytics cloud software",
-        "Create complex Excel formulas to improve automation in previous data management systems",
-        "Lead a team to successfully meet department goals and ensure that all large projects are completed in time",
-        "Oversee the onboarding process for new team members with an established vision and plan",
+        "Oversaw the onboarding process for new team members with an established vision and plan",
         "Responsible for curating accurate monthly reports to send out to vendors for rebates of over $10 million dollars",
-        "Manage over 30 vendors serving as the point of contact for all contractual communications and commitments",
+        "Coordinated with over 30 vendors serving as the point of contact for all contractual communications and commitments",
       ],
       location: "Jersey City, NJ",
       dates: "Aug. 2021-Jan. 2022",
@@ -55,9 +53,10 @@ function Resume({ scrollShowAnimation }) {
       link: "https://www.easyknock.com/",
       position: "Business Development Internship",
       details: [
-        "Extracted qualitative and quantitative data from targeted market segments and then analyzed the data",
+        "Extracted qualitative and quantitative data from targeted market segments to optimize revenue growth",
         "Conducted, interpreted, and presented market research for prospective investments",
         "Provided analytical support including assistance in evaluating and structuring transactions",
+        "Collaborated on special projects for sales and marketing development",
       ],
       location: "Manhattan, NY",
       dates: "Jan. 2018-May 2018",
@@ -83,8 +82,8 @@ function Resume({ scrollShowAnimation }) {
       <span className="project-intro-container">
         <h3>Professional Experience</h3>
         <p className="page-intro">
-          Please take a look at my previous work history where I have explained my responsibilities 
-          and duties. 
+          Please take a look at my previous work history where I have explained
+          my responsibilities and duties.
         </p>
       </span>
       <div className="resume">{displayResumeCard}</div>

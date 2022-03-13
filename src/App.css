@@ -33,11 +33,11 @@ img {
   border-bottom: #4dd2ff;
 }
 
-.header-backdrop {
+/* .header-backdrop {
   background: #4dd2ff;
   width: 80px;
   height: 10px;
-}
+} */
 
 .home-page {
   display: flex;
