@@ -18,12 +18,9 @@ function AboutMeContainer() {
       </span>
       <div className="about-desc">
         <p>
-          I'm a full stack developer from Fairview, New Jersey who is passionate
-          about developing high quality applications. I enjoy collaborating in
-          teams and thrive in fast paced environments. In my spare time I enjoy
-          playing guitar, -Highly organized and detail-oriented -riendly and
-          professional
+        rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Et ultrices neque ornare aenean euismod elementum. Erat velit scelerisque in dictum. Convallis convallis tellus id interdum velit laoreet id. Porttitor eget dolor morbi non. Ut porttitor leo a diam sollicitudin tempor id. Elementum sagittis vitae et leo.
         </p>
+        <p>Blog Posts</p>
       </div>
       <ul className="contact-info">
         <li>alenjo874@gmail.com</li>

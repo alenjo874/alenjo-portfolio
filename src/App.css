@@ -30,6 +30,7 @@ img {
 }
 
 .pages-name {
+  margin: 50px 0;
   border-bottom: #4dd2ff;
 }
 
@@ -66,7 +67,6 @@ img {
   display: flex;
 
   margin: 20px 0;
-
 }
 
 .hollow-outline {
@@ -246,6 +246,13 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
 }
 
 .skills-page {

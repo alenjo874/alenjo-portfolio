@@ -28,7 +28,7 @@ function Skills({ scrollShowAnimation }) {
   return (
     <div className="pages-container skills-page" id="skills">
       <div className="pages-header-container">
-        <h2>Skills</h2>
+      <h2 className="pages-name">Skills</h2>
         <div className="header-backdrop"></div>
       </div>
       <span className="project-intro-container">

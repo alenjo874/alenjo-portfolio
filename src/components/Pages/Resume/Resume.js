@@ -76,7 +76,7 @@ function Resume({ scrollShowAnimation }) {
   return (
     <div className="pages-container" id="resume">
       <div className="pages-header-container">
-        <h2>Resume</h2>
+        <h2 className="pages-name">Resume</h2>
         <div className="header-backdrop"></div>
       </div>
       <span className="project-intro-container">
