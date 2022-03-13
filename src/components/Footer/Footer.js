@@ -13,7 +13,6 @@ function Footer() {
         duration={500}
       >
         <ul className="footer-element">Back to Top</ul>
-        <ul className="footer-element">Back to Top</ul>
       </Link>
     </div>
   );
