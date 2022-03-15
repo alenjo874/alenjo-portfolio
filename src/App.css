@@ -663,6 +663,10 @@ img {
     font-size: 6rem;
   }
 
+  .home-short-about {
+    font-size: 1rem;
+  }
+
   .typewriter {
     font-size: 1rem;
   }
@@ -702,9 +706,13 @@ img {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
   .hollow-outline {
-    font-size: 5.5rem;
+    font-size: 4rem;
+  }
+
+  .home-short-about {
+    font-size: 0.8rem;
   }
 }
 
