@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import NavBarElements from "./NavBarElements";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+
 import NavBarHamburger from "./NavBarHamburger";
 
 function NavBarContainer() {
@@ -17,21 +18,9 @@ function NavBarContainer() {
     <>
       <div className="nav-back"></div>
 
-      <motion.div
-        className="navbar"
-        initial={{ y: -80 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.45, ease: "easeIn" }}
-      >
+      <motion.div className="navbar">
         <div className="nav-mylogo">
-          <NavLink
-            to="/"
-            spy={true}
-            smooth={true}
-            offset={-85}
-            duration={500}
-            style={{ textDecoration: "none" }}
-          >
+          <Link to="home" spy={true} smooth={true} offset={-85} duration={500}>
             <motion.li
               initial={{ y: -15, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -40,8 +29,9 @@ function NavBarContainer() {
             >
               alen jo
             </motion.li>
-          </NavLink>
+          </Link>
         </div>
+
         <button className="nav-hamburger-btn" onClick={handleShowHamNav}>
           <FontAwesomeIcon icon={faBars} />
         </button>
@@ -49,7 +39,9 @@ function NavBarContainer() {
       </motion.div>
       <div className="nav-hamburger-container">
         <AnimatePresence>
-        {showHamNav ? <NavBarHamburger setShowHamNav={setShowHamNav} /> : null}
+          {showHamNav ? (
+            <NavBarHamburger setShowHamNav={setShowHamNav} />
+          ) : null}
         </AnimatePresence>
       </div>
     </>

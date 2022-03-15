@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
@@ -72,13 +72,7 @@ function Home() {
             </a>
           </motion.div>
         </div>
-        <NavLink
-          to="/main"
-          spy={true}
-          smooth={true}
-          offset={-85}
-          duration={500}
-        >
+        <Link to="aboutme" spy={true} smooth={true} offset={-85} duration={500}>
           <motion.button
             {...fadeDownRight}
             transition={{ delay: 0.4, duration: 0.8, ease: "easeIn" }}
@@ -86,7 +80,7 @@ function Home() {
           >
             View My Work
           </motion.button>
-        </NavLink>
+        </Link>
       </div>
     );
   }

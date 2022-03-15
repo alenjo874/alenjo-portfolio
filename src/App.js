@@ -13,8 +13,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
-        </Route>
-        <Route exact path="/main">
           <NavBarConatiner />
           <PagesContainer />
           <Footer />
