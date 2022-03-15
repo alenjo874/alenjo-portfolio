@@ -72,7 +72,7 @@ function Home() {
             </a>
           </motion.div>
         </div>
-        <Link to="aboutme" spy={true} smooth={true} offset={-85} duration={500}>
+        <Link to="aboutme" spy={true} smooth={true} offset={-80} duration={500}>
           <motion.button
             {...fadeDownRight}
             transition={{ delay: 0.4, duration: 0.8, ease: "easeIn" }}

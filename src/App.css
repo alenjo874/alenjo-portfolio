@@ -11,6 +11,7 @@ BFD7EA
   padding: 0;
   color: white;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 img {
@@ -18,7 +19,7 @@ img {
 }
 
 .pages-container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1a1a1a;
   /* border: 2px solid red; */
 }
@@ -56,21 +57,23 @@ img {
 }
 
 .home-short-about {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  max-width: 500px;
-  /* border: 2px solid red; */
+  max-width: 800px;
   width: 100%;
+}
+
+.home-short-about p {
+  padding: 25px 50px;
 }
 
 .home-links {
   display: flex;
-
   margin: 20px 0;
 }
 
 .hollow-outline {
-  font-size: 8rem;
+  font-size: 12rem;
   color: #1a1a1a;
   -webkit-text-fill-color: #1a1a1a;
   -webkit-text-stroke-width: 2px;
@@ -84,6 +87,7 @@ img {
 }
 
 .home-name-element:hover {
+  cursor: pointer;
   -webkit-text-fill-color: #4dd2ff;
 }
 
@@ -168,6 +172,7 @@ img {
 }
 
 .my-logo:hover {
+  cursor: pointer;
   color: #4dd2ff;
   transition: 0.2s;
 }
@@ -192,6 +197,7 @@ img {
 }
 
 .navbar-elements:hover {
+  cursor: pointer;
   color: #4dd2ff;
 }
 
@@ -404,7 +410,7 @@ img {
   cursor: pointer;
   line-height: 1.5;
   padding: 1rem 1.5rem;
-  letter-spacing: 0.05rem;
+  font-size: 1rem;
 }
 
 .project-card-header {
@@ -597,6 +603,7 @@ img {
 }
 
 .footer-element:hover {
+  cursor: pointer;
   color: #4dd2ff;
 }
 
@@ -605,9 +612,19 @@ img {
   color: #d3d3d3;
 }
 
+@media screen and (max-width: 850px) {
+  .hollow-outline {
+    font-size: 9.5rem;
+  }
+
+  .home-short-about {
+    font-size: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .hollow-outline {
-    font-size: 6rem;
+    font-size: 7.5rem;
   }
 
   .project-card {
@@ -643,7 +660,7 @@ img {
   }
 
   .hollow-outline {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
   .typewriter {
@@ -683,6 +700,11 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 415px) {
+  .hollow-outline {
+    font-size: 5.5rem;
   }
 }
 

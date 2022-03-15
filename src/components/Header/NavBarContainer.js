@@ -10,6 +10,18 @@ import NavBarHamburger from "./NavBarHamburger";
 function NavBarContainer() {
   const [showHamNav, setShowHamNav] = useState(false);
 
+  const scrollNavShowAnimation = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: true },
+    transition: { delay: 0.2, duration: 0.6 },
+    variants: {
+      hidden: { opacity: 0, y: 10 },
+      visible: { opacity: 1, y: 0 },
+      ease: "easeIn",
+    },
+  };
+
   function handleShowHamNav() {
     setShowHamNav((prev) => !prev);
   }
@@ -21,12 +33,7 @@ function NavBarContainer() {
       <motion.div className="navbar">
         <div className="nav-mylogo">
           <Link to="home" spy={true} smooth={true} offset={-85} duration={500}>
-            <motion.li
-              initial={{ y: -15, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.25, duration: 0.26, ease: "easeIn" }}
-              className="my-logo"
-            >
+            <motion.li {...scrollNavShowAnimation} className="my-logo">
               alen jo
             </motion.li>
           </Link>
@@ -35,7 +42,7 @@ function NavBarContainer() {
         <button className="nav-hamburger-btn" onClick={handleShowHamNav}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <NavBarElements />
+        <NavBarElements scrollNavShowAnimation={scrollNavShowAnimation} />
       </motion.div>
       <div className="nav-hamburger-container">
         <AnimatePresence>

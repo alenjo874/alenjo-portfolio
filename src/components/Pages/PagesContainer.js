@@ -9,10 +9,10 @@ function PagesContainer() {
     initial: "hidden",
     whileInView: "visible",
     viewport: { once: true },
-    transition: { delay: 0.1, duration: 0.6 },
+    transition: { delay: 0.24, duration: 0.6 },
     variants: {
-      hidden: { opacity: 0, scale: 0, y: -150 },
-      visible: { opacity: 1, scale: 1, y: 0 },
+      hidden: { opacity: 0, y: -20 },
+      visible: { opacity: 1, y: 0 },
       ease: "easeIn",
     },
   };
