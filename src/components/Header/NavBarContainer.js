@@ -3,8 +3,7 @@ import NavBarElements from "./NavBarElements";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import NavBarHamburger from "./NavBarHamburger";
 
 function NavBarContainer() {
@@ -22,14 +21,29 @@ function NavBarContainer() {
     },
   };
 
+  const fadeDownIn = {
+    initial: { y: -30, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   function handleShowHamNav() {
     setShowHamNav((prev) => !prev);
   }
 
+  const triBarButton = (
+    <motion.button className="nav-hamburger-btn" onClick={handleShowHamNav}>
+      <FontAwesomeIcon icon={faBars} />
+    </motion.button>
+  );
+
+  const xButton = (
+    <motion.button className="nav-hamburger-btn" onClick={handleShowHamNav}>
+      <FontAwesomeIcon icon={faX} />
+    </motion.button>
+  );
+
   return (
     <>
-      <div className="nav-back"></div>
-
       <motion.div className="navbar">
         <div className="nav-mylogo">
           <Link to="home" spy={true} smooth={true} offset={-85} duration={500}>
@@ -39,10 +53,8 @@ function NavBarContainer() {
           </Link>
         </div>
 
-        <button className="nav-hamburger-btn" onClick={handleShowHamNav}>
-          <FontAwesomeIcon icon={faBars} />
-        </button>
         <NavBarElements scrollNavShowAnimation={scrollNavShowAnimation} />
+        <AnimatePresence>{showHamNav ? xButton : triBarButton}</AnimatePresence>
       </motion.div>
       <div className="nav-hamburger-container">
         <AnimatePresence>

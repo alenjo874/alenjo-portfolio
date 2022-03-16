@@ -3,10 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 function NavBarElements({ scrollNavShowAnimation }) {
-  const fadeDownIn = {
-    initial: { y: -30, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
+
 
   const linkAttributes = {
     spy: true,

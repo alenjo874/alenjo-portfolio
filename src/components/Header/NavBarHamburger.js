@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 function NavBarHamburger({ setShowHamNav }) {
   const fadeLeftIn = {
-    initial: { x: 30, opacity: 0 },
-    animate: { x: 0, opacity: 1 },
+    initial: { y: -30, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
   };
 
   const exitLeftOut = {
     exit: {
-      x: 30,
+      y: -30,
       opacity: 0,
       transition: { duration: 0.24, ease: "easeOut" },
     },

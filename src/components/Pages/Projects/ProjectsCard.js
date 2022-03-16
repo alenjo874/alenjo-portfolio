@@ -23,10 +23,9 @@ function ProjectsCard({
   return (
     <motion.div
       className="project-card"
-      initial={{ opacity: 0, scale: 0 }}
+      initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        scale: 1,
 
         transition: {
           duration: 0.35,
@@ -35,7 +34,7 @@ function ProjectsCard({
         },
       }}
       exit={{
-        y: "50%",
+        y: "10%",
         opacity: 0,
         transition: { duration: 0.3, ease: "easeOut" },
       }}

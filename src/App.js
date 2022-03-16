@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import PagesContainer from "./components/Pages/PagesContainer";
 import Home from "./components/Pages/Home/Home";
@@ -14,6 +13,7 @@ function App() {
         <Route exact path="/">
           <Home />
           <NavBarConatiner />
+
           <PagesContainer />
           <Footer />
         </Route>
