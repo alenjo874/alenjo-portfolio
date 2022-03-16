@@ -7,7 +7,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 function ProjectsCard({
   name,
   github,
-  description,
+  story,
   image,
   setIsCardClick,
 }) {
@@ -46,7 +46,7 @@ function ProjectsCard({
         </div>
 
         <div className="project-about">
-          <p>{description}</p>
+          <p>{story}</p>
         </div>
         <div className="project-links">
           <p>Demo</p>

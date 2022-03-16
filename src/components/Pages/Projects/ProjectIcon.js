@@ -7,6 +7,7 @@ function ProjectIcon({
   name,
   github,
   description,
+  story,
   image,
   codingStack,
   displayPopUp,
@@ -24,7 +25,7 @@ function ProjectIcon({
       setIsCardClick={setIsCardClick}
       name={name}
       github={github}
-      description={description}
+      story={story}
       image={image}
       codingStack={codingStack}
     />

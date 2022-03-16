@@ -104,8 +104,8 @@ img {
   padding: 10px;
   font-size: 1rem;
   outline: none;
+  margin: 8px 0;
   border: 2px solid #4dd2ff;
-  /* position: relative; */
   z-index: 1;
   background-color: #1a1a1a;
 }
@@ -406,10 +406,12 @@ img {
   line-height: 1.5;
   padding: 1rem 1.5rem;
   font-size: 1rem;
+  margin: 8px 0;
 }
 
 .project-card-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -455,7 +457,7 @@ img {
 }
 
 .project-about {
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 .project-links {
