@@ -317,6 +317,7 @@ img {
 
 .project-intro-container {
   margin: 50px 0;
+  padding: 0 50px;
 }
 
 .project-card-container {
@@ -345,7 +346,7 @@ img {
   background-color: #1a1a1a;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
   border-radius: 12px;
-  /* border: 2px solid yellow; */
+  margin: 0 50px;
 }
 
 .draw-border {
@@ -413,20 +414,20 @@ img {
 }
 
 .project-card-image {
-  max-width: 450px;
-  padding: 50px;
-
-  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  padding: 15px;
 }
 
 .project-card-image > img {
+  width: 100%;
   border-radius: 12px;
 }
 
 .project-details {
   max-width: 450px;
   padding: 20px;
-  /* border: 2px dotted pink; */
 }
 
 .project-name {
@@ -435,18 +436,22 @@ img {
 
 .project-stack {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .stack-element {
   list-style: none;
-  margin: 5px 5px 5px 0;
-  padding: 4px;
-  border: 2px solid #272727;
+  margin: 8px;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.2s;
+  border-radius: 8px;
 }
 
 .stack-element:hover {
   transition: 0.2s;
-  background-color: #4dd2ff;
+  color: #4dd2ff;
+  border: 1px solid #4dd2ff;
 }
 
 .project-about {
@@ -495,7 +500,7 @@ img {
 
 .project-highlight {
   background-color: #272727;
-  padding: 30px;
+  padding: 20px 30px;
   border-radius: 12px;
 }
 
@@ -533,7 +538,7 @@ img {
 
 .resume-card {
   max-width: 800px;
-  margin: 50px 0;
+  margin: 50px 25px;
   padding: 50px;
   border: 2px solid #272727;
   border-radius: 12px;
@@ -573,7 +578,7 @@ img {
 }
 
 .detail-element {
-  margin: 8px 0;
+  margin: 12px 0;
 }
 
 .position-dates {
@@ -614,6 +619,10 @@ img {
   .home-short-about {
     font-size: 1.25rem;
   }
+
+  .project-card {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -623,6 +632,8 @@ img {
 
   .project-card {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .resume-header {
@@ -712,11 +723,11 @@ img {
 
 @media screen and (max-width: 325px) {
   .hollow-outline {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .home-short-about {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 

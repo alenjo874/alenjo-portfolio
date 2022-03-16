@@ -30,15 +30,20 @@ function ProjectIcon({
     />
   );
 
+  const displayStack = codingStack.map((code) => {
+    return (
+      <li className="stack-element" key={uuidv4()}>
+        {code}
+      </li>
+    );
+  });
+
   return (
     <div>
       <motion.div className="project-image" {...scrollShowAnimation}>
-        <img
-          src={image}
-          // onClick={() => setIsCardClick(true)}
-          className="project-icon-element"
-        ></img>
+        <img src={image} className="project-icon-element"></img>
         <div className="project-highlight">
+          <div className="project-stack">{displayStack}</div>
           <h4 className="project-highlight-element">{name}</h4>
           <p className="project-highlight-element">{description}</p>
           <button onClick={displayPopUp} className="view-work-btn">

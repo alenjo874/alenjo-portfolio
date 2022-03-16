@@ -9,16 +9,9 @@ function ProjectsCard({
   github,
   description,
   image,
-  codingStack,
   setIsCardClick,
 }) {
-  const displayStack = codingStack.map((code) => {
-    return (
-      <li className="stack-element" key={uuidv4()}>
-        {code}
-      </li>
-    );
-  });
+
 
   return (
     <motion.div
@@ -51,7 +44,7 @@ function ProjectsCard({
             <FontAwesomeIcon icon={faXmark} />
           </button>
         </div>
-        <div className="project-stack">{displayStack}</div>
+
         <div className="project-about">
           <p>{description}</p>
         </div>

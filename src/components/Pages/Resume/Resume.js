@@ -58,7 +58,7 @@ function Resume({ scrollShowAnimation }) {
         "Provided analytical support including assistance in evaluating and structuring transactions",
         "Collaborated on special projects for sales and marketing development",
       ],
-      location: "Manhattan, NY",
+      location: "New York, NY",
       dates: "Jan. 2018-May 2018",
     },
   ];
