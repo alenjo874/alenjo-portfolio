@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ProjectsCard from "./ProjectsCard";
 import { v4 as uuidv4 } from "uuid";
 import { AnimatePresence, motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectIcon({
   name,
@@ -47,6 +49,14 @@ function ProjectIcon({
           <div className="project-stack">{displayStack}</div>
           <h4 className="project-highlight-element">{name}</h4>
           <p className="project-highlight-element">{description}</p>
+          <div className="project-links">
+            <p className="project-demo">
+              Demo <FontAwesomeIcon icon={faPlay} />
+            </p>
+            <a href={github} target="_blank" className="github-logo">
+              <img src="/images/GitHub.png" />
+            </a>
+          </div>
           <button onClick={displayPopUp} className="view-work-btn">
             See More{" "}
           </button>

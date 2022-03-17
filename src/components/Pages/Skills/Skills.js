@@ -31,14 +31,14 @@ function Skills({ scrollShowAnimation }) {
       <h2 className="pages-name">Skills</h2>
         <div className="header-backdrop"></div>
       </div>
-      <span className="project-intro-container">
-        <h3>Skills Something</h3>
+      {/* <span className="project-intro-container">
+        <h3>Programming Languanges, Frameworks, & Databases</h3>
         <p className="page-intro">
           Please take a look at some projects I've recently finished and find
           the full story on how I built our clients achieve success in the
           digital world.
         </p>
-      </span>
+      </span> */}
       <div key="box" className="skills-card-container">
         {displaySkillsCard}
       </div>

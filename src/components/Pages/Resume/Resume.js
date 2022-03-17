@@ -83,7 +83,7 @@ function Resume({ scrollShowAnimation }) {
         <h3>Professional Experience</h3>
         <p className="page-intro">
           Please take a look at my previous work history where I have explained
-          my responsibilities and duties.
+          my responsibilities and achievements.
         </p>
       </span>
       <div className="resume">{displayResumeCard}</div>

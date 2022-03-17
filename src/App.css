@@ -33,6 +33,7 @@ img {
 .pages-name {
   margin: 50px 0;
   border-bottom: #4dd2ff;
+  font-size: 2rem;
 }
 
 /* .header-backdrop {
@@ -304,15 +305,17 @@ img {
   height: auto;
 }
 
-.page-intro {
-  max-width: 500px;
-}
-
 .project-intro-container {
   margin: 50px 0;
   padding: 0 25px;
+  font-size: 1.35rem;
 }
 
+.page-intro {
+  max-width: 500px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
 .project-card-container {
   display: flex;
   align-items: center;
@@ -453,7 +456,7 @@ img {
   margin: 25px 0;
   max-height: 250px;
   overflow-y: scroll;
-  padding: 0 25px;
+  padding-right: 25px;
 }
 
 /* width */
@@ -478,6 +481,20 @@ img {
 
 .project-links {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.project-demo {
+  font-size: 1.15rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.project-demo:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .hide-button {
