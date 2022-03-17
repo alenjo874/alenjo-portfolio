@@ -285,13 +285,6 @@ img {
   border-radius: 12px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
 }
-/* 
-.skills-card h4 {
-  text-align: center;
-  border-bottom: 1px solid #4dd2ff;
-  width: 60%;
-  padding-bottom: 8px;
-} */
 
 .skills-logo-container {
   width: 100px;
@@ -460,6 +453,7 @@ img {
   margin: 25px 0;
   max-height: 250px;
   overflow-y: scroll;
+  padding: 0 25px;
 }
 
 /* width */
@@ -717,8 +711,8 @@ img {
   }
 
   .skills-card {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 25px;
   }
 
