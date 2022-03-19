@@ -52,7 +52,7 @@ function Home() {
           >
             <p>
               Hello, I'm a full stack developer who is passionate about
-              building high quality applications. I enjoy collaborating in teams
+              building quality applications. I enjoy collaborating in teams
               and can thrive in high-pressure environments. My love for problem
               solving and learning has lead me to find my purpose as a developer.
               In my spare time I enjoy playing acoustic guitar and video

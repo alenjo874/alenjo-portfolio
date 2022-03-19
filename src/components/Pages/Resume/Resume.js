@@ -10,9 +10,8 @@ function Resume({ scrollShowAnimation }) {
       link: "https://imperialdade.com/",
       position: "Senior Contracts Specialist",
       details: [
-        "Managed a team that included resolving performance issues, ensured that all projects are completed in time, and provided team guidance",
-        "Ensure contract renewals, extensions, and amendments are uploaded into internal analytics cloud software",
-        "Oversaw the onboarding process for new team members with an established vision and plan",
+        "Supervised a team to ensure contract renewals, extensions, and amendments were uploaded into internal analytics cloud software",
+        "Oversaw the onboarding process for new team members which included technical training and tracking key milestones",
         "Responsible for curating accurate monthly reports to send out to vendors for rebates of over $10 million dollars",
         "Coordinated with over 30 vendors serving as the point of contact for all contractual communications and commitments",
       ],
@@ -25,9 +24,9 @@ function Resume({ scrollShowAnimation }) {
       link: "https://imperialdade.com/",
       position: "Contracts and Pricing Specialist",
       details: [
-        "Evaluated ideal contract pricing to maximize company profit margins and coordinated with sales team to provide sell price for buyers",
+        "Evaluated ideal contract pricing to coordinate with sales team that maximized company profit margins",
+        "Achieved the highest total volume of contract renewals within the team attributed to consistent quarterly performance",
         "Analyzed internal data with Excel formulas to ensure contracts comply with company goals and standards",
-        "Consolidated thousands of contracts from different systems due to over 40 company acquisitions",
         "Conducted pricing support review that captured an average of $5000 monthly missing rebates",
         "Utilized Excel to convert contract pricing data into reports and upload into analytics cloud software",
       ],

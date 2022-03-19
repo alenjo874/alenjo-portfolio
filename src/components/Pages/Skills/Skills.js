@@ -12,6 +12,7 @@ function Skills({ scrollShowAnimation }) {
     { code: "Rails", logo: "/images/RailsLogo.png" },
     { code: "Sinatra", logo: "/images/SinatraLogo.png" },
     { code: "PostgreSQL", logo: "/images/PostgressLogo.png" },
+    { code: "SQLite", logo: "/images/SqliteLogo.png" },
     { code: "Git", logo: "/images/GitLogo.png" },
   ];
 
@@ -28,7 +29,7 @@ function Skills({ scrollShowAnimation }) {
   return (
     <div className="pages-container skills-page" id="skills">
       <div className="pages-header-container">
-      <h2 className="pages-name">Skills</h2>
+        <h2 className="pages-name">Skills</h2>
         <div className="header-backdrop"></div>
       </div>
       {/* <span className="project-intro-container">
