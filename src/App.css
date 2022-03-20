@@ -332,6 +332,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .project-card {
@@ -571,6 +572,15 @@ img {
   justify-content: center;
   align-items: center;
   height: auto;
+  width: 100%;
+}
+
+.display-resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .resume-card {
@@ -763,6 +773,9 @@ img {
 }
 
 @media screen and (max-width: 325px) {
+  html {
+    font-size: 12px;
+  }
   .hollow-outline {
     font-size: 3rem;
   }

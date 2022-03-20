@@ -42,7 +42,7 @@ function ProjectIcon({
   });
 
   return (
-    <div>
+    <>
       <motion.div className="project-image" {...scrollShowAnimation}>
         <img src={image} className="project-icon-element"></img>
         <div className="project-highlight">
@@ -69,7 +69,7 @@ function ProjectIcon({
           </div>
         ) : null}
       </AnimatePresence>
-    </div>
+    </>
   );
 }
 

@@ -85,7 +85,7 @@ function Resume({ scrollShowAnimation }) {
           my responsibilities and achievements.
         </p>
       </span>
-      <div className="resume">{displayResumeCard}</div>
+      <div className="display-resume">{displayResumeCard}</div>
     </div>
   );
 }
