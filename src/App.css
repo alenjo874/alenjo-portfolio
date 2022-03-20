@@ -564,6 +564,7 @@ img {
 
 .home-logos {
   margin-left: 0;
+  border: 2px solid red;
 }
 
 #resume {
