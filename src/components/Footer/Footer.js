@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <Link
         activeClass="active"
-        to="aboutme"
+        to="projects"
         spy={true}
         smooth={true}
         offset={-80}
