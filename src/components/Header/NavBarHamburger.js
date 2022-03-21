@@ -25,7 +25,7 @@ function NavBarHamburger({ setShowHamNav }) {
 
   return (
     <motion.div className="ham-elements-container">
-      <Link activeClass="active" to="aboutme" {...linkAttribute}>
+      {/* <Link activeClass="active" to="aboutme" {...linkAttribute}>
         <motion.ul
           className="navbar-ham-elements"
           {...fadeLeftIn}
@@ -35,7 +35,7 @@ function NavBarHamburger({ setShowHamNav }) {
         >
           About
         </motion.ul>
-      </Link>
+      </Link> */}
       <Link activeClass="active" to="projects" {...linkAttribute}>
         <motion.ul
           className="navbar-ham-elements"

@@ -25,26 +25,26 @@ function Projects({ scrollShowAnimation }) {
       image: "/images/CinemaReviewApp.png",
       codingStack: ["React", "JavaScript", "HTML/CSS"],
     },
-    {
-      name: "Bridge",
-      github: "https://github.com/alenjo874/cinema-review-app",
-      description:
-        "Bridge ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      story: "",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Wjd-Cak78mooEfHTx64D7xhFtgBMZRFiiQ&usqp=CAU",
-      codingStack: ["Bridge", "React", "CSS", "HTML"],
-    },
-    {
-      name: "Sunflower",
-      github: "https://github.com/alenjo874/cinema-review-app",
-      description:
-        "SunflowerLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      story: "",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdEzcMvlpZHwQ6mTIx3bqqPGOJXX6cTvmwg&usqp=CAU",
-      codingStack: ["Sunflower", "React", "CSS", "HTML"],
-    },
+    // {
+    //   name: "Bridge",
+    //   github: "https://github.com/alenjo874/cinema-review-app",
+    //   description:
+    //     "Bridge ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    //   story: "",
+    //   image:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Wjd-Cak78mooEfHTx64D7xhFtgBMZRFiiQ&usqp=CAU",
+    //   codingStack: ["Bridge", "React", "CSS", "HTML"],
+    // },
+    // {
+    //   name: "Sunflower",
+    //   github: "https://github.com/alenjo874/cinema-review-app",
+    //   description:
+    //     "SunflowerLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    //   story: "",
+    //   image:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdEzcMvlpZHwQ6mTIx3bqqPGOJXX6cTvmwg&usqp=CAU",
+    //   codingStack: ["Sunflower", "React", "CSS", "HTML"],
+    // },
   ];
 
   const displayProjectImage = projectsArray.map((project) => {

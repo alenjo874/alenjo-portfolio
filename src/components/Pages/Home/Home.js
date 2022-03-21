@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
 function Home() {
@@ -36,27 +35,14 @@ function Home() {
               <li className="home-name-element">O</li>
             </span>
           </motion.h1>
-          {/* <motion.div className="typewriter">
-            <Typewriter
-              options={{
-                strings: ["Full Stack Developer", "React Developer"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </motion.div> */}
+
           <motion.span
             className="home-short-about"
             {...fadeDownRight}
             transition={{ delay: 0.2, duration: 0.8, ease: "easeIn" }}
           >
             <p>
-              Hello, I'm a full stack developer who is passionate about
-              building quality applications. I enjoy collaborating in teams
-              and can thrive in high-pressure environments. My love for problem
-              solving and learning has lead me to find my purpose as a developer.
-              In my spare time I enjoy playing acoustic guitar and video
-              games!
+            Hello, I'm a Full Stack Developer who is passionate about building quality applications. I have experience using frontend and backend technologies such as JavaScript, React, SQL, Ruby, and Rails. I enjoy collaborating in teams and can thrive in high-pressure environments. My love for problem solving and learning has led me to find my purpose as a developer. In my spare time I enjoy playing acoustic guitar and video games.
             </p>
           </motion.span>
           <motion.div
@@ -73,7 +59,13 @@ function Home() {
             </a>
           </motion.div>
         </div>
-        <Link to="aboutme" spy={true} smooth={true} offset={-80} duration={500}>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
           <motion.button
             {...fadeDownRight}
             transition={{ delay: 0.4, duration: 0.8, ease: "easeIn" }}

@@ -14,7 +14,7 @@ function NavBarElements({ scrollNavShowAnimation }) {
 
   return (
     <>
-      <Link activeClass="active" to="aboutme" {...linkAttributes}>
+      {/* <Link activeClass="active" to="aboutme" {...linkAttributes}>
         <motion.ul
           className="navbar-elements"
           {...scrollNavShowAnimation}
@@ -22,7 +22,7 @@ function NavBarElements({ scrollNavShowAnimation }) {
         >
           About
         </motion.ul>
-      </Link>
+      </Link> */}
       <Link activeClass="active" to="projects" {...linkAttributes}>
         <motion.ul
           className="navbar-elements"

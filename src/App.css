@@ -60,12 +60,13 @@ img {
 .home-short-about {
   font-size: 1.5rem;
   font-weight: 400;
-  max-width: 800px;
+  max-width: 850px;
   width: 100%;
 }
 
 .home-short-about p {
   padding: 25px 50px;
+  text-align: justify;
 }
 
 .home-links {
@@ -90,11 +91,6 @@ img {
 .home-name-element:hover {
   cursor: pointer;
   -webkit-text-fill-color: #4dd2ff;
-}
-
-.typewriter {
-  position: relative;
-  top: -150px;
 }
 
 .view-work-btn {
@@ -719,10 +715,6 @@ img {
   }
 
   .home-short-about {
-    font-size: 1rem;
-  }
-
-  .typewriter {
     font-size: 1rem;
   }
 

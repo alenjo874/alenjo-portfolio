@@ -19,7 +19,7 @@ function PagesContainer() {
 
   return (
     <div>
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Projects scrollShowAnimation={scrollShowAnimation} />
       <Skills scrollShowAnimation={scrollShowAnimation} />
       <Resume scrollShowAnimation={scrollShowAnimation} />
