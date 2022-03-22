@@ -91,7 +91,6 @@ img {
 .home-links {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   align-items: center;
   width: 40%;
   margin: 20px 0;
@@ -568,12 +567,12 @@ img {
   width: 100%;
 }
 
-
 .home-links-elements {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  min-width: 65px;
+  width: 25%;
 }
 
 #resume {

@@ -58,20 +58,28 @@ function Home() {
           >
             <div className="home-links-elements">
               <a
+                className="github-logo home-logos"
                 href="https://github.com/alenjo874"
                 target="_blank"
-                className="github-logo home-logos"
               >
-                <img src="/images/GitHub.png" alt="github link" />
+                <img
+                  src="/images/GitHub.png"
+                  title="Github"
+                  alt="github link"
+                />
               </a>
             </div>
             <div className="home-links-elements">
               <a
+                className="github-logo home-logos"
                 href="/documents/Resume.pdf"
                 target="_blank"
-                className="github-logo home-logos"
               >
-                <img src="/images/ResumeLogo.png" alt="resume link" />
+                <img
+                  src="/images/ResumeLogo.png"
+                  title="Resume"
+                  alt="resume link"
+                />
               </a>
             </div>
           </motion.div>
