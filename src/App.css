@@ -69,11 +69,6 @@ img {
   text-align: justify;
 }
 
-.home-links {
-  display: flex;
-  margin: 20px 0;
-}
-
 .hollow-outline {
   font-size: 10.5em;
   color: #1a1a1a;
@@ -91,6 +86,15 @@ img {
 .home-name-element:hover {
   cursor: pointer;
   -webkit-text-fill-color: #4dd2ff;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+  margin: 20px 0;
 }
 
 .view-work-btn {
@@ -560,7 +564,7 @@ img {
 }
 
 .home-logos {
-  margin-left: 0;
+  margin: 10px;
 }
 
 #resume {
