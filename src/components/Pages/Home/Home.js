@@ -42,7 +42,13 @@ function Home() {
             transition={{ delay: 0.2, duration: 0.8, ease: "easeIn" }}
           >
             <p>
-            Hello, I'm a Full Stack Developer who is passionate about building quality applications. I have experience using frontend and backend technologies such as JavaScript, React, SQL, Ruby, and Rails. I enjoy collaborating in teams and can thrive in high-pressure environments. My love for problem solving and learning has led me to find my purpose as a developer. In my spare time I enjoy playing acoustic guitar and video games.
+              Hello, I'm a Full Stack Developer who is passionate about building
+              quality applications. I have experience using frontend and backend
+              technologies such as JavaScript, React, SQL, Ruby, and Rails. I
+              enjoy collaborating in teams and can thrive in high-pressure
+              environments. My love for problem solving and learning has led me
+              to find my purpose as a developer. In my spare time I enjoy
+              playing acoustic guitar and video games.
             </p>
           </motion.span>
           <motion.div
@@ -56,6 +62,13 @@ function Home() {
               className="github-logo home-logos"
             >
               <img src="/images/GitHub.png" />
+            </a>
+            <a
+              href="/documents/Resume.pdf"
+              target="_blank"
+              className="github-logo home-logos"
+            >
+              <img src="/images/ResumeLogo.png" />
             </a>
           </motion.div>
         </div>
