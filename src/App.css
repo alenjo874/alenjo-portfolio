@@ -565,6 +565,15 @@ img {
 
 .home-logos {
   margin: 10px;
+  width: 100%;
+}
+
+
+.home-links-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
 }
 
 #resume {

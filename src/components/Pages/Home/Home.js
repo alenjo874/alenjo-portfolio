@@ -56,20 +56,24 @@ function Home() {
             {...fadeDownRight}
             transition={{ delay: 0.3, duration: 0.8, ease: "easeIn" }}
           >
-            <a
-              href="https://github.com/alenjo874"
-              target="_blank"
-              className="github-logo home-logos"
-            >
-              <img src="/images/GitHub.png" />
-            </a>
-            <a
-              href="/documents/Resume.pdf"
-              target="_blank"
-              className="github-logo home-logos"
-            >
-              <img src="/images/ResumeLogo.png" />
-            </a>
+            <div className="home-links-elements">
+              <a
+                href="https://github.com/alenjo874"
+                target="_blank"
+                className="github-logo home-logos"
+              >
+                <img src="/images/GitHub.png" alt="github link" />
+              </a>
+            </div>
+            <div className="home-links-elements">
+              <a
+                href="/documents/Resume.pdf"
+                target="_blank"
+                className="github-logo home-logos"
+              >
+                <img src="/images/ResumeLogo.png" alt="resume link" />
+              </a>
+            </div>
           </motion.div>
         </div>
         <Link
