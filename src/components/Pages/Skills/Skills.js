@@ -10,9 +10,9 @@ function Skills({ scrollShowAnimation }) {
     { code: "Node.js", logo: "/images/NodeLogo.png" },
     { code: "Ruby", logo: "/images/RubyLogo.png" },
     { code: "Rails", logo: "/images/RailsLogo.png" },
+    { code: "Sass", logo: "/images/SassLogo.png" },
     { code: "Sinatra", logo: "/images/SinatraLogo.png" },
     { code: "PostgreSQL", logo: "/images/PostgressLogo.png" },
-    { code: "SQLite", logo: "/images/SqliteLogo.png" },
     { code: "Git", logo: "/images/GitLogo.png" },
   ];
 
