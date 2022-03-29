@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faPlay } from "@fortawesome/free-solid-svg-icons";
 
-function ProjectsCard({ name, github, story, image, setIsCardClick }) {
+function ProjectsCard({ name, github, story, image, link, setIsCardClick }) {
   return (
     <motion.div
       className="project-card"
@@ -41,11 +41,15 @@ function ProjectsCard({ name, github, story, image, setIsCardClick }) {
           <p>{story}</p>
         </div>
         <div className="project-links">
-          <p className="project-demo">
-            Demo <FontAwesomeIcon icon={faPlay} />
-          </p>
+          <a className="project-demo">
+            Demo 
+            {/* <FontAwesomeIcon icon={faPlay} /> */}
+          </a>
           <a href={github} target="_blank" className="github-logo">
             <img src="/images/GitHub.png" />
+          </a>
+          <a href={link} target="_blank" className="deployment-link">
+            Visit
           </a>
         </div>
       </div>

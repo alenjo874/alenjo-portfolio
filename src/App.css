@@ -484,7 +484,7 @@ img {
 
 .project-links {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   margin: 10px 0;
 }
@@ -546,8 +546,22 @@ img {
   margin: 15px 0;
 }
 
+.deployment-link {
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.deployment-link:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.deployment-link:active {
+  transform: scale(1);
+  transition: 0.2s;
+}
+
 .github-logo {
-  margin-left: 50px;
   width: 50px;
   transition: 0.2s;
 }

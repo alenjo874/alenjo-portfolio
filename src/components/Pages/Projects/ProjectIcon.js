@@ -11,6 +11,7 @@ function ProjectIcon({
   description,
   story,
   image,
+  link,
   codingStack,
   displayPopUp,
   scrollShowAnimation,
@@ -50,11 +51,15 @@ function ProjectIcon({
           <h4 className="project-highlight-element">{name}</h4>
           <p className="project-highlight-element">{description}</p>
           <div className="project-links">
-            <p className="project-demo">
-              Demo <FontAwesomeIcon icon={faPlay} />
-            </p>
+            <a className="project-demo">
+              Demo
+              {/* <FontAwesomeIcon icon={faPlay} /> */}
+            </a>
             <a href={github} target="_blank" className="github-logo">
               <img src="/images/GitHub.png" />
+            </a>
+            <a href={link} target="_blank" className="deployment-link">
+              Visit
             </a>
           </div>
           <button onClick={displayPopUp} className="view-work-btn">
