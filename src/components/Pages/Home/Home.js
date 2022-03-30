@@ -82,6 +82,15 @@ function Home() {
                 />
               </a>
             </div>
+            <div className="home-links-elements">
+              <a
+                className="github-logo home-logos"
+                href="https://medium.com/@alenjo874"
+                target="_blank"
+              >
+                <img src="/images/Medium.png" title="Resume" alt="blog link" />
+              </a>
+            </div>
           </motion.div>
         </div>
         <Link
