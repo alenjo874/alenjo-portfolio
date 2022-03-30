@@ -9,7 +9,7 @@ function Projects({ scrollShowAnimation }) {
       name: "My Blogger",
       github: "https://github.com/alenjo874/car-travel-blog-app",
       description:
-        "An app for people to write blogs on cars, road trips, traveling and more.",
+        "An app for users to write blogs on cars, road trips, traveling and more.",
       story: " ",
       image: "/images/StudiaApp.png",
       link: "https://car-travel-blog-app.herokuapp.com/blogs",

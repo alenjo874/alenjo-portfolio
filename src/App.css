@@ -587,7 +587,8 @@ img {
   justify-content: center;
   align-items: center;
   min-width: 65px;
-  width: 25%;
+  width: 20%;
+  max-width: 500px;
 }
 
 #resume {

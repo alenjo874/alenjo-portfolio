@@ -51,23 +51,25 @@ function ProjectIcon({
         <img src={image} className="project-icon-element"></img>
         <div className="project-highlight">
           <div className="project-stack">{displayStack}</div>
-          <h4 className="project-highlight-element">{name}</h4>
-          <p className="project-highlight-element">{description}</p>
-          <div className="project-links">
-            <a href={demo} target="_blank" className="project-demo">
-              Demo
-              {/* <FontAwesomeIcon icon={faPlay} /> */}
-            </a>
-            <a href={github} target="_blank" className="github-logo">
-              <img src="/images/GitHub.png" />
-            </a>
-            <a href={link} target="_blank" className="deployment-link">
-              Visit
-            </a>
+          <div>
+            <h4 className="project-highlight-element">{name}</h4>
+            <p className="project-highlight-element">{description}</p>
+            <div className="project-links">
+              <a href={demo} target="_blank" className="project-demo">
+                Demo
+                {/* <FontAwesomeIcon icon={faPlay} /> */}
+              </a>
+              <a href={github} target="_blank" className="github-logo">
+                <img src="/images/GitHub.png" />
+              </a>
+              <a href={link} target="_blank" className="deployment-link">
+                Visit
+              </a>
+            </div>
+            <button onClick={displayPopUp} className="view-work-btn">
+              See More{" "}
+            </button>
           </div>
-          <button onClick={displayPopUp} className="view-work-btn">
-            See More{" "}
-          </button>
         </div>
       </motion.div>
       <AnimatePresence>
