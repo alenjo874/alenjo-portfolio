@@ -12,7 +12,7 @@ function Projects({ scrollShowAnimation }) {
         "An app for people to write blogs on cars, road trips, traveling and more.",
       story: " ",
       image: "/images/StudiaApp.png",
-      link: "",
+      link: "https://car-travel-blog-app.herokuapp.com/blogs",
       demo: "",
       codingStack: [
         "React",
