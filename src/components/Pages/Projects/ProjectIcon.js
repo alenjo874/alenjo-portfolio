@@ -15,6 +15,7 @@ function ProjectIcon({
   codingStack,
   displayPopUp,
   scrollShowAnimation,
+  demo,
 }) {
   const [isCardClick, setIsCardClick] = useState(false);
 
@@ -31,6 +32,8 @@ function ProjectIcon({
       story={story}
       image={image}
       codingStack={codingStack}
+      demo={demo}
+      link={link}
     />
   );
 
@@ -51,7 +54,7 @@ function ProjectIcon({
           <h4 className="project-highlight-element">{name}</h4>
           <p className="project-highlight-element">{description}</p>
           <div className="project-links">
-            <a className="project-demo">
+            <a href={demo} target="_blank" className="project-demo">
               Demo
               {/* <FontAwesomeIcon icon={faPlay} /> */}
             </a>

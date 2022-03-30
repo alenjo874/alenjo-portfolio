@@ -490,6 +490,7 @@ img {
 }
 
 .project-demo {
+  text-decoration: none;
   font-size: 1.15rem;
   font-weight: 500;
   transition: 0.2s;
