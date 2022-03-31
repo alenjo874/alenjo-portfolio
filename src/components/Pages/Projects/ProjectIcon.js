@@ -48,7 +48,10 @@ function ProjectIcon({
   return (
     <>
       <motion.div className="project-image" {...scrollShowAnimation}>
-        <img src={image} className="project-icon-element"></img>
+        {/* <img src={image} className="project-icon-element"></img> */}
+        <a href={demo} target="_blank">
+          <img src={image} className="project-icon-element"></img>
+        </a>
         <div className="project-highlight">
           <div className="project-stack">{displayStack}</div>
           <div>

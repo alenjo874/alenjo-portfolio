@@ -33,7 +33,9 @@ function ProjectsCard({
       }}
     >
       <div className="project-card-image">
-        <img src={image} />
+           <a href={demo} target="_blank">
+          <img src={image} className="project-icon-element"></img>
+        </a>
       </div>
       <div className="project-details">
         <div className="project-card-header">
