@@ -651,10 +651,15 @@ img {
 
 .footer {
   display: flex;
+  flex-direction: column;
   height: 80px;
   justify-content: center;
   align-items: center;
   background-color: #272727;
+}
+
+.call-to-action {
+  margin: 5px 0;
 }
 
 .footer-element {
