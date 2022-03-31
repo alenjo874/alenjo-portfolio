@@ -34,7 +34,7 @@ function ProjectsCard({
     >
       <div className="project-card-image">
            <a href={demo} target="_blank">
-          <img src={image} className="project-icon-element"></img>
+          <img src={image} ></img>
         </a>
       </div>
       <div className="project-details">
