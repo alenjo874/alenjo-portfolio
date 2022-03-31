@@ -53,8 +53,9 @@ function ProjectsCard({
             Demo
             {/* <FontAwesomeIcon icon={faPlay} /> */}
           </a>
-          <a href={github} target="_blank" className="github-logo">
-            <img src="/images/GitHub.png" />
+          <a href={github} target="_blank" className="github-link">
+            {/* <img src="/images/GitHub.png" /> */}
+            Github
           </a>
           <a href={link} target="_blank" className="deployment-link">
             Visit

@@ -487,20 +487,20 @@ img {
   justify-content: space-evenly;
   align-items: center;
   margin: 10px 0;
-}
-
-.project-demo {
-  text-decoration: none;
   font-size: 1.15rem;
-  font-weight: 500;
+}
+
+.project-links a {
+  text-decoration: none;
   transition: 0.2s;
 }
 
-.project-demo:hover {
-  transform: scale(1.1);
+.project-links a:hover {
+  text-decoration: underline;
   transition: 0.2s;
-  cursor: pointer;
+  color: #4dd2ff;
 }
+
 
 .hide-button {
   max-width: 300px;
@@ -545,16 +545,6 @@ img {
 
 .project-highlight-element {
   margin: 15px 0;
-}
-
-.deployment-link {
-  font-size: 1.15rem;
-  text-decoration: none;
-}
-
-.deployment-link:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
 }
 
 .deployment-link:active {
