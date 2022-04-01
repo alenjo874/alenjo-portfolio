@@ -14,7 +14,7 @@ function Projects({ scrollShowAnimation }) {
         "When building this project, I was switching back and forth from React (JavaScript) and Rails (Ruby) while also taking on learning Sass. Using Sass in this project, it helped keep my CSS code dynamic. I would love to explore more advanced ways to utilize Sass in my future projects. I used an external news api to fetch relevant articles which taught me important aspects of using different APIs. A challenge I faced during this project was setting up authentication and authorization for users. It was a great experience finally implementing cookies to persist the user information on the page.",
       image: "/images/BlogApp.png",
       link: "https://car-travel-blog-app.herokuapp.com/",
-      demo: "",
+      demo: "https://www.youtube.com/watch?v=uAX3xBcdxbI",
       codingStack: [
         "React",
         "JavaScript",
