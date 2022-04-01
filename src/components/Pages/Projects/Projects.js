@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 function Projects({ scrollShowAnimation }) {
   const projectsArray = [
     {
-      name: "My Blogger",
+      name: "Car Blogger",
       github: "https://github.com/alenjo874/car-travel-blog-app",
       description:
-        "An app for users to write blogs on cars, road trips, traveling and more.",
+        "A blog app for users to connect through stories about cars, road trips, traveling and more.",
       story:
         "When building this project, I was switching back and forth from React (JavaScript) and Rails (Ruby) while also taking on learning Sass. Using Sass in this project, it helped keep my CSS code dynamic. I would love to explore more advanced ways to utilize Sass in my future projects. I used an external news api to fetch relevant articles which taught me important aspects of using different APIs. A challenge I faced during this project was setting up authentication and authorization for users. It was a great experience finally implementing cookies to persist the user information on the page.",
-      image: "/images/StudiaApp.png",
+      image: "/images/BlogApp.png",
       link: "https://car-travel-blog-app.herokuapp.com/",
       demo: "",
       codingStack: [

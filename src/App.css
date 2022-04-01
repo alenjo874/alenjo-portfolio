@@ -778,6 +778,7 @@ img {
   }
 }
 @media screen and (max-width: 450px) {
+
   .hollow-outline {
     font-size: 4rem;
   }
@@ -785,6 +786,8 @@ img {
   .home-short-about {
     font-size: 0.8rem;
   }
+
+  
 }
 
 @media screen and (max-width: 325px) {
