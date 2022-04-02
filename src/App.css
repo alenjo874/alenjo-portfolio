@@ -651,8 +651,8 @@ img {
 .footer {
   display: flex;
   flex-direction: column;
-  height: 80px;
-  justify-content: center;
+  height: 160px;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #272727;
 }
@@ -778,7 +778,6 @@ img {
   }
 }
 @media screen and (max-width: 450px) {
-
   .hollow-outline {
     font-size: 4rem;
   }
@@ -786,8 +785,6 @@ img {
   .home-short-about {
     font-size: 0.8rem;
   }
-
-  
 }
 
 @media screen and (max-width: 325px) {

@@ -17,7 +17,7 @@ function Footer() {
       <div className="call-to-action">
         <p>
           If you <b>like</b> what you <b>see</b>, email me at{" "}
-          <b>alenjo@gmail.com</b>
+          <b>alenjo874@gmail.com</b>
         </p>
       </div>
     </div>
