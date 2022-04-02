@@ -484,7 +484,8 @@ img {
 
 .project-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 10px 0;
   font-size: 1.15rem;
@@ -492,6 +493,7 @@ img {
 
 .project-links a {
   text-decoration: none;
+  margin: 2px;
   transition: 0.2s;
 }
 
