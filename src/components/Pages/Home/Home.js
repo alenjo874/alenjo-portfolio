@@ -44,7 +44,7 @@ function Home() {
             <p>
               Hello, I'm a Full Stack Developer who is passionate about building
               quality applications. I have experience using frontend and backend
-              technologies such as JavaScript, React, SQL, Ruby, and Rails. I
+              technologies such as JavaScript, React, PostgreSQL, Ruby, and Rails. I
               enjoy collaborating in teams and can thrive in high-pressure
               environments. My love for problem solving and learning has led me
               to find my purpose as a developer. In my spare time I enjoy
