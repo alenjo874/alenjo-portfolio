@@ -54,25 +54,29 @@ function ProjectIcon({
         </a>
         <div className="project-highlight">
           <div className="project-stack">{displayStack}</div>
-          <div>
-            <h4 className="project-highlight-element">{name}</h4>
-            <p className="project-highlight-element">{description}</p>
-            <div className="project-links">
-              <a href={demo} target="_blank" className="project-demo">
-                Demo
-                {/* <FontAwesomeIcon icon={faPlay} /> */}
-              </a>
-              <a href={github} target="_blank" className="github-link">
-                {/* <img src="/images/GitHub.png" /> */}
-                Github
-              </a>
-              <a href={link} target="_blank" className="deployment-link">
-                Visit
-              </a>
+          <div className="pro-icon-body">
+            <span>
+              <h4 className="project-highlight-element">{name}</h4>
+              <p className="project-highlight-element">{description}</p>
+            </span>
+            <div>
+              <div className="project-links">
+                <a href={demo} target="_blank" className="project-demo">
+                  Demo
+                  {/* <FontAwesomeIcon icon={faPlay} /> */}
+                </a>
+                <a href={github} target="_blank" className="github-link">
+                  {/* <img src="/images/GitHub.png" /> */}
+                  Github
+                </a>
+                <a href={link} target="_blank" className="deployment-link">
+                  Visit
+                </a>
+              </div>
+              <button onClick={displayPopUp} className="view-work-btn">
+                See More{" "}
+              </button>
             </div>
-            <button onClick={displayPopUp} className="view-work-btn">
-              See More{" "}
-            </button>
           </div>
         </div>
       </motion.div>

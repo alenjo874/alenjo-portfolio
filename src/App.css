@@ -523,10 +523,11 @@ img {
 }
 
 .project-image {
-  max-width: 350px;
+  max-width: 400px;
   margin: 50px;
   background-color: #272727;
   border-radius: 12px;
+
   box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -539,9 +540,18 @@ img {
 }
 
 .project-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #272727;
   padding: 20px 30px;
   border-radius: 12px;
+}
+
+.pro-icon-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .project-highlight-element {
@@ -661,6 +671,7 @@ img {
 
 .call-to-action {
   margin: 5px 0;
+  text-align: center;
 }
 
 .footer-element {
