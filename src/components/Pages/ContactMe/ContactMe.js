@@ -28,14 +28,10 @@ function ContactMe() {
       reply_to: "",
     });
     setConfirmEmailSent(true);
-  };
-
-  useEffect(() => {
     const timer = setTimeout(() => {
-      console.log("This will run after 1 second!");
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
+      setConfirmEmailSent(false);
+    }, 2500);
+  };
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -99,7 +95,7 @@ function ContactMe() {
                 transition: { duration: 0.25, ease: "easeOut" },
               }}
             >
-              <p>Email Sent</p>
+              <p>Email sent, thank you for your time!</p>
               <div>
                 <button
                   onClick={(e) => setConfirmEmailSent(false)}

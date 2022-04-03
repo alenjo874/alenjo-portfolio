@@ -734,13 +734,18 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   min-width: 150px;
   position: relative;
   background-color: #1a1a1a;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   margin: 0 25px;
-  padding: 10px 20px;
+  padding: 30px 20px;
+}
+
+.email-popup > div > button {
+  margin: 0 10px;
 }
 
 input:-webkit-autofill,
