@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { send } from "emailjs-com";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,13 +14,9 @@ function ContactMe() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // send("service_3suslm2", "template_z2jj9wq", toSend, "-3zPa_KDB7yogMGVm")
-    //   .then((response) => {
-    //     console.log("SUCCESS!", response.status, response.text);
-    //   })
-    //   .catch((err) => {
-    //     console.log("FAILED...", err);
-    //   });
+    send("service_3suslm2", "template_z2jj9wq", toSend, "-3zPa_KDB7yogMGVm")
+      .then((response) => {})
+      .catch((err) => {});
 
     setToSend({
       from_name: "",
@@ -28,7 +24,7 @@ function ContactMe() {
       reply_to: "",
     });
     setConfirmEmailSent(true);
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setConfirmEmailSent(false);
     }, 2500);
   };

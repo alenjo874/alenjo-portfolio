@@ -1,20 +1,20 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import { motion } from "framer-motion";
 
 function Home() {
-  const fadeDownIn = {
-    initial: { y: 30, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
+  // const fadeDownIn = {
+  //   initial: { y: 30, opacity: 0 },
+  //   animate: { y: 0, opacity: 1 },
+  // };
   const fadeDownRight = {
     initial: { x: -30, opacity: 0 },
     animate: { x: 0, opacity: 1 },
   };
-  const fadeDownLeft = {
-    initial: { x: 30, opacity: 0 },
-    animate: { x: 0, opacity: 1 },
-  };
+  // const fadeDownLeft = {
+  //   initial: { x: 30, opacity: 0 },
+  //   animate: { x: 0, opacity: 1 },
+  // };
 
   function Text() {
     return (

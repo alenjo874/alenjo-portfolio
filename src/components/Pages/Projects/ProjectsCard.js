@@ -32,8 +32,8 @@ function ProjectsCard({
       }}
     >
       <div className="project-card-image">
-           <a href={demo} target="_blank" rel="noreferrer">
-          <img src={image} ></img>
+        <a href={demo} target="_blank" rel="noreferrer">
+          <img src={image} alt="project thumbnail"></img>
         </a>
       </div>
       <div className="project-details">
@@ -50,15 +50,30 @@ function ProjectsCard({
           <p>{story}</p>
         </div>
         <div className="project-links">
-          <a href={demo} target="_blank" rel="noreferrer" className="project-demo">
+          <a
+            href={demo}
+            target="_blank"
+            rel="noreferrer"
+            className="project-demo"
+          >
             Demo
             {/* <FontAwesomeIcon icon={faPlay} /> */}
           </a>
-          <a href={github} target="_blank" rel="noreferrer" className="github-link">
+          <a
+            href={github}
+            target="_blank"
+            rel="noreferrer"
+            className="github-link"
+          >
             {/* <img src="/images/GitHub.png" /> */}
             Github
           </a>
-          <a href={link} target="_blank" rel="noreferrer" className="deployment-link">
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="deployment-link"
+          >
             Visit
           </a>
         </div>

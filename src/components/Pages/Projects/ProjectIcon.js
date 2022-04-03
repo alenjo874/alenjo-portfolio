@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import ProjectsCard from "./ProjectsCard";
 import { v4 as uuidv4 } from "uuid";
 import { AnimatePresence, motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectIcon({
   name,
@@ -13,7 +11,6 @@ function ProjectIcon({
   image,
   link,
   codingStack,
-  displayPopUp,
   scrollShowAnimation,
   demo,
 }) {
@@ -50,7 +47,7 @@ function ProjectIcon({
       <motion.div className="project-image" {...scrollShowAnimation}>
         {/* <img src={image} className="project-icon-element"></img> */}
         <a href={demo} target="_blank" rel="noreferrer">
-          <img src={image} className="project-icon-element"></img>
+          <img src={image} className="project-icon-element" alt="project thumbnail" ></img>
         </a>
         <div className="project-highlight">
           <div className="project-stack">{displayStack}</div>
@@ -61,15 +58,30 @@ function ProjectIcon({
             </span>
             <div>
               <div className="project-links">
-                <a href={demo} target="_blank" rel="noreferrer" className="project-demo">
+                <a
+                  href={demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-demo"
+                >
                   Demo
                   {/* <FontAwesomeIcon icon={faPlay} /> */}
                 </a>
-                <a href={github} target="_blank" rel="noreferrer" className="github-link">
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="github-link"
+                >
                   {/* <img src="/images/GitHub.png" /> */}
                   Github
                 </a>
-                <a href={link} target="_blank" rel="noreferrer" className="deployment-link">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="deployment-link"
+                >
                   Visit
                 </a>
               </div>

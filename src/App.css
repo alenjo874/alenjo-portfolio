@@ -759,6 +759,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border-bottom: 1px solid rgba(77, 210, 255, 0.6);
   -webkit-text-fill-color: #4dd2ff;
+  box-shadow: 0 0 0px 1000px transparent inset;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
