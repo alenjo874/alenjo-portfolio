@@ -69,6 +69,17 @@ function NavBarHamburger({ setShowHamNav }) {
           Resume
         </motion.ul>
       </Link>
+      <Link activeClass="active" to="contact" {...linkAttribute}>
+        <motion.ul
+          className="navbar-ham-elements"
+          {...fadeLeftIn}
+          transition={{ delay: 0.3, duration: 0.26, ease: "easeIn" }}
+          {...exitLeftOut}
+          onClick={() => setShowHamNav(false)}
+        >
+          Contact
+        </motion.ul>
+      </Link>
     </motion.div>
   );
 }

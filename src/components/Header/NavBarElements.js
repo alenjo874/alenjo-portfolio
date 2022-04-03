@@ -3,8 +3,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 function NavBarElements({ scrollNavShowAnimation }) {
-
-
   const linkAttributes = {
     spy: true,
     smooth: true,
@@ -48,6 +46,15 @@ function NavBarElements({ scrollNavShowAnimation }) {
           transition={{ delay: 0.45, duration: 0.26, ease: "easeIn" }}
         >
           Resume
+        </motion.ul>
+      </Link>
+      <Link activeClass="active" to="contact" {...linkAttributes}>
+        <motion.ul
+          className="navbar-elements"
+          {...scrollNavShowAnimation}
+          transition={{ delay: 0.45, duration: 0.26, ease: "easeIn" }}
+        >
+          Contact
         </motion.ul>
       </Link>
     </>

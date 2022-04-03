@@ -733,7 +733,7 @@ img {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 600px) {
   .nav-hamburger-btn {
     position: absolute;
     right: 30px;
