@@ -4,7 +4,6 @@ import { send } from "emailjs-com";
 function ContactMe() {
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "",
     message: "",
     reply_to: "",
   });
@@ -18,6 +17,12 @@ function ContactMe() {
       .catch((err) => {
         console.log("FAILED...", err);
       });
+
+    setToSend({
+      from_name: "",
+      message: "",
+      reply_to: "",
+    });
   };
 
   const handleChange = (e) => {
@@ -39,32 +44,28 @@ function ContactMe() {
         <input
           type="text"
           name="from_name"
-          placeholder="from name"
+          placeholder="Your Name"
           value={toSend.from_name}
           onChange={handleChange}
         />
+
         <input
           type="text"
-          name="to_name"
-          placeholder="to name"
-          value={toSend.to_name}
+          name="reply_to"
+          placeholder="Your Email"
+          value={toSend.reply_to}
           onChange={handleChange}
         />
-        <input
+        <textarea
           type="text"
           name="message"
           placeholder="Your message"
           value={toSend.message}
           onChange={handleChange}
         />
-        <input
-          type="text"
-          name="reply_to"
-          placeholder="Your email"
-          value={toSend.reply_to}
-          onChange={handleChange}
-        />
-        <button type="submit">Submit</button>
+        <button type="submit" className="view-work-btn">
+          Submit
+        </button>
       </form>
     </div>
   );

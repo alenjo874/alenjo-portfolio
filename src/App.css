@@ -528,7 +528,6 @@ img {
   margin: 50px;
   background-color: #272727;
   border-radius: 12px;
-
   box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -667,6 +666,69 @@ img {
   align-items: center;
   height: auto;
 }
+.call-to-action {
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  max-width: 800px;
+  margin: 50px 50px;
+  border: 2px solid #272727;
+  border-radius: 12px;
+  background-color: #272727;
+  padding: 5%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+.email-form > input {
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 15px 0;
+  font-style: inherit;
+}
+
+.email-form > textarea {
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 15px 0;
+  padding: 5px;
+  min-height: 150px;
+  font-style: inherit;
+}
+
+.email-form > input:focus {
+  border-bottom: 1px solid rgba(77, 210, 255, 0.6);
+}
+
+.email-form > textarea:focus {
+  border: 1px solid rgba(77, 210, 255, 0.6);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid rgba(77, 210, 255, 0.6);
+  -webkit-text-fill-color: #4dd2ff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .footer {
   display: flex;
@@ -675,10 +737,6 @@ img {
   justify-content: space-evenly;
   align-items: center;
   background-color: #272727;
-}
-
-.call-to-action {
-  text-align: center;
 }
 
 .footer-element {
