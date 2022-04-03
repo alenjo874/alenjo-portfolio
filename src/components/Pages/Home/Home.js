@@ -44,11 +44,11 @@ function Home() {
             <p>
               Hello, I'm a Full Stack Developer who is passionate about building
               quality applications. I have experience using frontend and backend
-              technologies such as JavaScript, React, PostgreSQL, Ruby, and Rails. I
-              enjoy collaborating in teams and can thrive in high-pressure
-              environments. My love for problem solving and learning has led me
-              to find my purpose as a developer. In my spare time I enjoy
-              playing acoustic guitar and video games.
+              technologies such as JavaScript, React, PostgreSQL, Ruby, and
+              Rails. I enjoy collaborating in teams and can thrive in
+              high-pressure environments. My love for problem solving and
+              learning has led me to find my purpose as a developer. In my spare
+              time I enjoy playing acoustic guitar and video games.
             </p>
           </motion.span>
           <motion.div
@@ -61,6 +61,7 @@ function Home() {
                 className="github-logo home-logos"
                 href="https://github.com/alenjo874"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="/images/GitHub.png"
@@ -74,6 +75,7 @@ function Home() {
                 className="github-logo home-logos"
                 href="/documents/Resume.pdf"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="/images/ResumeLogo.png"
@@ -87,6 +89,7 @@ function Home() {
                 className="github-logo home-logos"
                 href="https://medium.com/@alenjo874"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="/images/Medium.png" title="Resume" alt="blog link" />
               </a>

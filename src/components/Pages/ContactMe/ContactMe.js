@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { send } from "emailjs-com";
+import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function ContactMe() {
   const [toSend, setToSend] = useState({
@@ -7,23 +10,32 @@ function ContactMe() {
     message: "",
     reply_to: "",
   });
+  const [confirmEmailSent, setConfirmEmailSent] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_3suslm2", "template_z2jj9wq", toSend, "-3zPa_KDB7yogMGVm")
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
+    // send("service_3suslm2", "template_z2jj9wq", toSend, "-3zPa_KDB7yogMGVm")
+    //   .then((response) => {
+    //     console.log("SUCCESS!", response.status, response.text);
+    //   })
+    //   .catch((err) => {
+    //     console.log("FAILED...", err);
+    //   });
 
     setToSend({
       from_name: "",
       message: "",
       reply_to: "",
     });
+    setConfirmEmailSent(true);
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log("This will run after 1 second!");
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -67,6 +79,39 @@ function ContactMe() {
           Submit
         </button>
       </form>
+      <AnimatePresence>
+        {confirmEmailSent ? (
+          <div className="email-confirm-container">
+            <motion.div
+              className="email-popup"
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  duration: 0.25,
+                  type: "show",
+                  ease: "easeIn",
+                },
+              }}
+              exit={{
+                y: "10%",
+                opacity: 0,
+                transition: { duration: 0.25, ease: "easeOut" },
+              }}
+            >
+              <p>Email Sent</p>
+              <div>
+                <button
+                  onClick={(e) => setConfirmEmailSent(false)}
+                  className="hide-button"
+                >
+                  <FontAwesomeIcon icon={faXmark} />
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 }

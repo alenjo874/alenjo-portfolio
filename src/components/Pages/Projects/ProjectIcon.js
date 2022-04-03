@@ -49,7 +49,7 @@ function ProjectIcon({
     <>
       <motion.div className="project-image" {...scrollShowAnimation}>
         {/* <img src={image} className="project-icon-element"></img> */}
-        <a href={demo} target="_blank">
+        <a href={demo} target="_blank" rel="noreferrer">
           <img src={image} className="project-icon-element"></img>
         </a>
         <div className="project-highlight">
@@ -61,15 +61,15 @@ function ProjectIcon({
             </span>
             <div>
               <div className="project-links">
-                <a href={demo} target="_blank" className="project-demo">
+                <a href={demo} target="_blank" rel="noreferrer" className="project-demo">
                   Demo
                   {/* <FontAwesomeIcon icon={faPlay} /> */}
                 </a>
-                <a href={github} target="_blank" className="github-link">
+                <a href={github} target="_blank" rel="noreferrer" className="github-link">
                   {/* <img src="/images/GitHub.png" /> */}
                   Github
                 </a>
-                <a href={link} target="_blank" className="deployment-link">
+                <a href={link} target="_blank" rel="noreferrer" className="deployment-link">
                   Visit
                 </a>
               </div>

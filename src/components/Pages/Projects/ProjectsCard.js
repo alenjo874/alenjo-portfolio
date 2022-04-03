@@ -1,8 +1,7 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark, faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectsCard({
   name,
@@ -33,7 +32,7 @@ function ProjectsCard({
       }}
     >
       <div className="project-card-image">
-           <a href={demo} target="_blank">
+           <a href={demo} target="_blank" rel="noreferrer">
           <img src={image} ></img>
         </a>
       </div>
@@ -51,15 +50,15 @@ function ProjectsCard({
           <p>{story}</p>
         </div>
         <div className="project-links">
-          <a href={demo} target="_blank" className="project-demo">
+          <a href={demo} target="_blank" rel="noreferrer" className="project-demo">
             Demo
             {/* <FontAwesomeIcon icon={faPlay} /> */}
           </a>
-          <a href={github} target="_blank" className="github-link">
+          <a href={github} target="_blank" rel="noreferrer" className="github-link">
             {/* <img src="/images/GitHub.png" /> */}
             Github
           </a>
-          <a href={link} target="_blank" className="deployment-link">
+          <a href={link} target="_blank" rel="noreferrer" className="deployment-link">
             Visit
           </a>
         </div>

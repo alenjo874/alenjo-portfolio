@@ -10,7 +10,7 @@ function ResumeCard({
   details,
   location,
   dates,
-  scrollShowAnimation
+  scrollShowAnimation,
 }) {
   const displayWorkDetails = details.map((detail) => {
     return (
@@ -24,13 +24,18 @@ function ResumeCard({
     <motion.div className="resume-card" {...scrollShowAnimation}>
       <div className="resume-header">
         <div className="company-logo">
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <img src={logo} alt={company} />
           </a>
         </div>
         <div className="company-details">
           <span className="company-loc">
-            <a href={link} target="_blank" className="company-link">
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="company-link"
+            >
               <h4 className="company-name">{company}</h4>
             </a>
             <p>{location}</p>
