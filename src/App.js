@@ -13,7 +13,6 @@ function App() {
         <Route exact path="/">
           <Home />
           <NavBarConatiner />
-
           <PagesContainer />
           <Footer />
         </Route>

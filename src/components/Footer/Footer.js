@@ -14,12 +14,7 @@ function Footer() {
       >
         <ul className="footer-element">Back to Top</ul>
       </Link>
-      <div className="call-to-action">
-        <p>
-          If you <b>like</b> what you <b>see</b>, email me at{" "}
-          <b>alenjo874@gmail.com</b>
-        </p>
-      </div>
+     
     </div>
   );
 }

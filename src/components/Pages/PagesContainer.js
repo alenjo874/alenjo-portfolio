@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import Resume from "./Resume/Resume";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
+import ContactMe from "./ContactMe/ContactMe";
 
 function PagesContainer() {
   const scrollShowAnimation = {
@@ -23,6 +24,7 @@ function PagesContainer() {
       <Projects scrollShowAnimation={scrollShowAnimation} />
       <Skills scrollShowAnimation={scrollShowAnimation} />
       <Resume scrollShowAnimation={scrollShowAnimation} />
+      <ContactMe />
     </div>
   );
 }
