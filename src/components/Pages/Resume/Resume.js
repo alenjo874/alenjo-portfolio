@@ -12,7 +12,7 @@ function Resume({ scrollShowAnimation }) {
       details: [
         "Supervised a team to ensure contract renewals, extensions, and amendments were uploaded into internal analytics cloud software",
         "Oversaw the onboarding process for new team members which included technical training and tracking key milestones",
-        "Composed accurate monthly reports to send out to vendors for rebates of over $10 million dollars",
+        "Composed accurate monthly reports to send out to vendors for rebates of over $10 million",
         "Coordinated with over 30 vendors serving as the point of contact for all contractual communications and commitments",
       ],
       location: "Jersey City, NJ",
