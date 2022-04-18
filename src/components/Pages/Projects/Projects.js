@@ -11,10 +11,10 @@ function Projects({ scrollShowAnimation }) {
       description:
         "An IT system management application where employees can submit tickets, IT admins can provide ticket support, and view ticket analytics.",
       story:
-        "When building this project, I was switching back and forth from React (JavaScript) and Rails (Ruby) while also taking on learning Sass. Using Sass in this project, it helped keep my CSS code dynamic. I would love to explore more advanced ways to utilize Sass in my future projects. I used an external news api to fetch relevant articles which taught me important aspects of using different APIs. A challenge I faced during this project was setting up authentication and authorization for users. It was a great experience finally implementing cookies to persist the user information on the page.",
+        "It was a great challenge building an application with two user stories in mind. I wanted to bring my previous experience with CRMs and interest in IT to build this application. One interesting front end tool I learned during this project was how to animate an SVG. I can’t wait to use these new tools in my future projects.",
       image: "/images/itSystems.png",
       link: "https://it-service-management-system.herokuapp.com/",
-      demo: "",
+      demo: "https://www.youtube.com/watch?v=Ku6LKFecnqI",
       codingStack: [
         "React",
         "JavaScript",
