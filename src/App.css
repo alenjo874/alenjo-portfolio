@@ -32,7 +32,6 @@ img {
 }
 
 .pages-name {
-
   margin: 50px 0;
   border-bottom: #4dd2ff;
   font-size: 2rem;
@@ -910,6 +909,14 @@ select:-webkit-autofill:focus {
 
   .home-short-about {
     font-size: 0.7rem;
+  }
+
+  .home-links-elements {
+    min-width: 50px;
+  }
+
+  .home-links {
+    flex-wrap: wrap;
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link} from "react-scroll";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 function Home() {
@@ -92,6 +92,20 @@ function Home() {
                 rel="noreferrer"
               >
                 <img src="/images/Medium.png" title="Resume" alt="blog link" />
+              </a>
+            </div>
+            <div className="home-links-elements">
+              <a
+                className="github-logo home-logos"
+                href="https://www.linkedin.com/in/alen-jo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/images/linkedinLogo.png"
+                  title="linkedin"
+                  alt="linkedin logo"
+                />
               </a>
             </div>
           </motion.div>
