@@ -696,6 +696,7 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   margin: 15px 0;
   font-style: inherit;
+  text-indent: 5px;
 }
 
 .email-form > textarea {
@@ -705,16 +706,21 @@ img {
   outline: 0;
   border: 1px solid rgba(255, 255, 255, 0.6);
   margin: 15px 0;
-  padding: 5px;
+  padding: 8px;
   min-height: 150px;
   font-style: inherit;
+  text-indent: 5px;
+  transition: 0.2s;
+  border-radius: 12px;
 }
 
 .email-form > input:focus {
+  transition: 0.2s;
   border-bottom: 1px solid rgba(77, 210, 255, 0.6);
 }
 
 .email-form > textarea:focus {
+  transition: 0.2s;
   border: 1px solid rgba(77, 210, 255, 0.6);
 }
 

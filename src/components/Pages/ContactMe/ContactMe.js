@@ -51,6 +51,7 @@ function ContactMe() {
           placeholder="Your Name"
           value={toSend.from_name}
           onChange={handleChange}
+          autoComplete="off"
         />
 
         <input
@@ -59,6 +60,7 @@ function ContactMe() {
           placeholder="Your Email"
           value={toSend.reply_to}
           onChange={handleChange}
+          autoComplete="off"
         />
         <textarea
           type="text"
