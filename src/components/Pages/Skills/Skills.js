@@ -3,6 +3,7 @@ import SkillsCard from "./SkillsCard";
 import { v4 as uuidv4 } from "uuid";
 function Skills({ scrollShowAnimation }) {
   const skillsArray = [
+    { code: "Angular", logo: "/images/Angular.png" },
     { code: "HTML", logo: "/images/HTML5Logo.png" },
     { code: "CSS", logo: "/images/CSS3Logo.png" },
     { code: "JavaScript", logo: "/images/JavaScriptLogo.png" },
