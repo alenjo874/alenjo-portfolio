@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 function Skills({ scrollShowAnimation }) {
   const skillsArray = [
     { code: "Angular", logo: "/images/Angular.png" },
-    { code: "TypeSgit adcript", logo: "/images/Typescript.png" },
+    { code: "TypeScript", logo: "/images/Typescript.png" },
     { code: "JavaScript", logo: "/images/JavaScriptLogo.png" },
     { code: "Sass", logo: "/images/SassLogo.png" },
     { code: "React", logo: "/images/ReactLogo.png" },
