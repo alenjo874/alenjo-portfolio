@@ -91,7 +91,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/images/Medium.png" title="Resume" alt="blog link" />
+                <img src="/images/Medium.png" title="Blog" alt="blog link" />
               </a>
             </div>
             <div className="home-links-elements">

@@ -5,6 +5,23 @@ import { v4 as uuidv4 } from "uuid";
 function Resume({ scrollShowAnimation }) {
   const experienceArray = [
     {
+      company: "CLASSLINK",
+      logo: "https://global-uploads.webflow.com/5d6db64572061db9c481aaeb/60182f5d86c7b418746db982_classlink-icon-main-large.png",
+      link: "https://www.classlink.com/",
+      position: "Software Developer",
+      details: [
+        "Develop and maintain applications that scale to 6.5M daily users while communicating with cross-functional teams regarding product and design",
+        "Facilitate end-to-end production of new application features from design to backend functionality with AWS",
+        "Utilize Angular, Sass, and Node.js with programming documents to develop clean, scalable, and reusable code",
+        "Collaborate with product management and UI/UX designers to design, build, test and improve products",
+        "Design robust, reusable, and reliable Angular components to enhance company platform, frameworks, and services",
+        "Perform code and design reviews to guarantee high quality software that is unit tested and checked in regularly for continuous integration",
+        "Contribute to planning within an agile scrum team, committing to 100% continuous improvement and deployment (CI/CD)",
+      ],
+      location: "Clifton, NJ",
+      dates: "May. 2022-Present",
+    },
+    {
       company: "IMPERIAL DADE",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvqXLkU2N4xNGit038L5r1lsv58rf5ekmcQ&usqp=CAU",
       link: "https://imperialdade.com/",
