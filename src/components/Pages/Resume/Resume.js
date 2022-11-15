@@ -10,7 +10,7 @@ function Resume({ scrollShowAnimation }) {
       link: "https://www.classlink.com/",
       position: "Software Developer",
       details: [
-        "Develop and maintain applications that scale to 6.5M daily users while communicating with cross-functional teams regarding product and design",
+        // "Develop and maintain applications that scale to 6.5M daily users while communicating with cross-functional teams regarding product and design",
         "Facilitate end-to-end production of new application features from design to backend functionality with AWS",
         "Utilize Angular, Sass, and Node.js with programming documents to develop clean, scalable, and reusable code",
         "Collaborate with product management and UI/UX designers to design, build, test and improve products",
